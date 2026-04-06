@@ -1,0 +1,999 @@
+1,is between 1 and 99 inclusive,has a 1 in the units digit,has only 1 distinct digit,is a perfect square,is a perfect cube
+2,is between 1 and 99 inclusive,has a 2 in the units digit,has only 1 distinct digit,is prime
+3,is between 1 and 99 inclusive,has a 3 in the units digit,has only 1 distinct digit,is prime
+4,is between 1 and 99 inclusive,has a 4 in the units digit,has only 1 distinct digit,is a perfect square
+5,is between 1 and 99 inclusive,has a 5 in the units digit,has only 1 distinct digit,is prime
+6,is between 1 and 99 inclusive,has a 6 in the units digit,has only 1 distinct digit
+7,is between 1 and 99 inclusive,has a 7 in the units digit,has only 1 distinct digit,is prime
+8,is between 1 and 99 inclusive,has a 8 in the units digit,has only 1 distinct digit,is a perfect cube
+9,is between 1 and 99 inclusive,has a 9 in the units digit,has only 1 distinct digit,is a perfect square
+10,is between 1 and 99 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+11,is between 1 and 99 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has only 1 distinct digit,is prime,has an odd number in the tens digit
+12,is between 1 and 99 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+13,is between 1 and 99 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+14,is between 1 and 99 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+15,is between 1 and 99 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+16,is between 1 and 99 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is a perfect square,has an odd number in the tens digit
+17,is between 1 and 99 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+18,is between 1 and 99 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+19,is between 1 and 99 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+20,is between 1 and 99 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+21,is between 1 and 99 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+22,is between 1 and 99 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has only 1 distinct digit,has an even number in the tens digit
+23,is between 1 and 99 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit
+24,is between 1 and 99 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+25,is between 1 and 99 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is a perfect square,has an even number in the tens digit
+26,is between 1 and 99 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+27,is between 1 and 99 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is a perfect cube,has an even number in the tens digit
+28,is between 1 and 99 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+29,is between 1 and 99 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit
+30,is between 1 and 99 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+31,is between 1 and 99 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit
+32,is between 1 and 99 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+33,is between 1 and 99 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit
+34,is between 1 and 99 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+35,is between 1 and 99 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+36,is between 1 and 99 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is a perfect square,has an odd number in the tens digit
+37,is between 1 and 99 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+38,is between 1 and 99 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+39,is between 1 and 99 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+40,is between 1 and 99 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+41,is between 1 and 99 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit
+42,is between 1 and 99 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+43,is between 1 and 99 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit
+44,is between 1 and 99 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has only 1 distinct digit,has an even number in the tens digit
+45,is between 1 and 99 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+46,is between 1 and 99 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+47,is between 1 and 99 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit
+48,is between 1 and 99 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+49,is between 1 and 99 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is a perfect square,has an even number in the tens digit
+50,is between 1 and 99 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+51,is between 1 and 99 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+52,is between 1 and 99 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+53,is between 1 and 99 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit
+54,is between 1 and 99 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+55,is between 1 and 99 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit
+56,is between 1 and 99 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+57,is between 1 and 99 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+58,is between 1 and 99 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+59,is between 1 and 99 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+60,is between 1 and 99 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+61,is between 1 and 99 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit
+62,is between 1 and 99 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+63,is between 1 and 99 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+64,is between 1 and 99 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is a perfect square,is a perfect cube,has an even number in the tens digit
+65,is between 1 and 99 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+66,is between 1 and 99 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has only 1 distinct digit,has an even number in the tens digit
+67,is between 1 and 99 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit
+68,is between 1 and 99 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+69,is between 1 and 99 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an even number in the tens digit
+70,is between 1 and 99 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+71,is between 1 and 99 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit
+72,is between 1 and 99 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+73,is between 1 and 99 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit
+74,is between 1 and 99 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+75,is between 1 and 99 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+76,is between 1 and 99 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+77,is between 1 and 99 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit
+78,is between 1 and 99 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that increase from left to right,has an odd number in the tens digit
+79,is between 1 and 99 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit
+80,is between 1 and 99 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+81,is between 1 and 99 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is a perfect square,has an even number in the tens digit
+82,is between 1 and 99 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+83,is between 1 and 99 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit
+84,is between 1 and 99 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+85,is between 1 and 99 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+86,is between 1 and 99 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+87,is between 1 and 99 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an even number in the tens digit
+88,is between 1 and 99 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has only 1 distinct digit,has an even number in the tens digit
+89,is between 1 and 99 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit
+90,is between 1 and 99 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+91,is between 1 and 99 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+92,is between 1 and 99 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+93,is between 1 and 99 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+94,is between 1 and 99 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+95,is between 1 and 99 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+96,is between 1 and 99 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+97,is between 1 and 99 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit
+98,is between 1 and 99 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit
+99,is between 1 and 99 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit
+100,is between 100 and 199 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+101,is between 100 and 199 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+102,is between 100 and 199 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+103,is between 100 and 199 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+104,is between 100 and 199 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+105,is between 100 and 199 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+106,is between 100 and 199 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+107,is between 100 and 199 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+108,is between 100 and 199 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+109,is between 100 and 199 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+110,is between 100 and 199 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+111,is between 100 and 199 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit,has an odd number in the hundreds digit
+112,is between 100 and 199 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+113,is between 100 and 199 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+114,is between 100 and 199 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+115,is between 100 and 199 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+116,is between 100 and 199 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+117,is between 100 and 199 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+118,is between 100 and 199 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+119,is between 100 and 199 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+120,is between 100 and 199 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+121,is between 100 and 199 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+122,is between 100 and 199 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+123,is between 100 and 199 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+124,is between 100 and 199 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+125,is between 100 and 199 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is a perfect cube,has an even number in the tens digit,has an odd number in the hundreds digit
+126,is between 100 and 199 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+127,is between 100 and 199 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+128,is between 100 and 199 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+129,is between 100 and 199 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+130,is between 100 and 199 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+131,is between 100 and 199 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+132,is between 100 and 199 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+133,is between 100 and 199 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+134,is between 100 and 199 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+135,is between 100 and 199 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+136,is between 100 and 199 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+137,is between 100 and 199 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+138,is between 100 and 199 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+139,is between 100 and 199 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+140,is between 100 and 199 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+141,is between 100 and 199 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+142,is between 100 and 199 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+143,is between 100 and 199 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+144,is between 100 and 199 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+145,is between 100 and 199 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+146,is between 100 and 199 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+147,is between 100 and 199 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+148,is between 100 and 199 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+149,is between 100 and 199 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+150,is between 100 and 199 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+151,is between 100 and 199 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+152,is between 100 and 199 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+153,is between 100 and 199 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+154,is between 100 and 199 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+155,is between 100 and 199 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+156,is between 100 and 199 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+157,is between 100 and 199 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+158,is between 100 and 199 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+159,is between 100 and 199 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+160,is between 100 and 199 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+161,is between 100 and 199 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+162,is between 100 and 199 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+163,is between 100 and 199 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+164,is between 100 and 199 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+165,is between 100 and 199 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+166,is between 100 and 199 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+167,is between 100 and 199 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+168,is between 100 and 199 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+169,is between 100 and 199 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+170,is between 100 and 199 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+171,is between 100 and 199 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+172,is between 100 and 199 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+173,is between 100 and 199 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+174,is between 100 and 199 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+175,is between 100 and 199 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+176,is between 100 and 199 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+177,is between 100 and 199 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+178,is between 100 and 199 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+179,is between 100 and 199 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+180,is between 100 and 199 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+181,is between 100 and 199 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+182,is between 100 and 199 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+183,is between 100 and 199 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+184,is between 100 and 199 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+185,is between 100 and 199 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+186,is between 100 and 199 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+187,is between 100 and 199 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+188,is between 100 and 199 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+189,is between 100 and 199 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+190,is between 100 and 199 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+191,is between 100 and 199 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+192,is between 100 and 199 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+193,is between 100 and 199 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+194,is between 100 and 199 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+195,is between 100 and 199 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+196,is between 100 and 199 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is a perfect square,has an odd number in the tens digit,has an odd number in the hundreds digit
+197,is between 100 and 199 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+198,is between 100 and 199 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+199,is between 100 and 199 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+200,is between 200 and 299 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+201,is between 200 and 299 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+202,is between 200 and 299 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+203,is between 200 and 299 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+204,is between 200 and 299 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+205,is between 200 and 299 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+206,is between 200 and 299 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+207,is between 200 and 299 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+208,is between 200 and 299 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+209,is between 200 and 299 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+210,is between 200 and 299 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+211,is between 200 and 299 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+212,is between 200 and 299 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+213,is between 200 and 299 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+214,is between 200 and 299 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+215,is between 200 and 299 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+216,is between 200 and 299 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is a perfect cube,has an odd number in the tens digit,has an even number in the hundreds digit
+217,is between 200 and 299 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+218,is between 200 and 299 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+219,is between 200 and 299 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+220,is between 200 and 299 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+221,is between 200 and 299 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+222,is between 200 and 299 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has only 1 distinct digit,has an even number in the tens digit,has an even number in the hundreds digit
+223,is between 200 and 299 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+224,is between 200 and 299 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+225,is between 200 and 299 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+226,is between 200 and 299 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+227,is between 200 and 299 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+228,is between 200 and 299 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+229,is between 200 and 299 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+230,is between 200 and 299 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+231,is between 200 and 299 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+232,is between 200 and 299 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+233,is between 200 and 299 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+234,is between 200 and 299 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+235,is between 200 and 299 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+236,is between 200 and 299 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+237,is between 200 and 299 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+238,is between 200 and 299 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+239,is between 200 and 299 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+240,is between 200 and 299 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+241,is between 200 and 299 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+242,is between 200 and 299 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+243,is between 200 and 299 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+244,is between 200 and 299 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+245,is between 200 and 299 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+246,is between 200 and 299 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+247,is between 200 and 299 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+248,is between 200 and 299 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+249,is between 200 and 299 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+250,is between 200 and 299 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+251,is between 200 and 299 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+252,is between 200 and 299 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+253,is between 200 and 299 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+254,is between 200 and 299 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+255,is between 200 and 299 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+256,is between 200 and 299 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is a perfect square,has an odd number in the tens digit,has an even number in the hundreds digit
+257,is between 200 and 299 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+258,is between 200 and 299 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+259,is between 200 and 299 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+260,is between 200 and 299 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+261,is between 200 and 299 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+262,is between 200 and 299 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+263,is between 200 and 299 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+264,is between 200 and 299 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+265,is between 200 and 299 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+266,is between 200 and 299 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+267,is between 200 and 299 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+268,is between 200 and 299 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+269,is between 200 and 299 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+270,is between 200 and 299 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+271,is between 200 and 299 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+272,is between 200 and 299 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+273,is between 200 and 299 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+274,is between 200 and 299 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+275,is between 200 and 299 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+276,is between 200 and 299 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+277,is between 200 and 299 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+278,is between 200 and 299 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+279,is between 200 and 299 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+280,is between 200 and 299 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+281,is between 200 and 299 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+282,is between 200 and 299 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+283,is between 200 and 299 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+284,is between 200 and 299 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+285,is between 200 and 299 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+286,is between 200 and 299 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+287,is between 200 and 299 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+288,is between 200 and 299 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+289,is between 200 and 299 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+290,is between 200 and 299 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+291,is between 200 and 299 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+292,is between 200 and 299 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+293,is between 200 and 299 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+294,is between 200 and 299 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+295,is between 200 and 299 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+296,is between 200 and 299 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+297,is between 200 and 299 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+298,is between 200 and 299 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+299,is between 200 and 299 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+300,is between 300 and 399 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+301,is between 300 and 399 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+302,is between 300 and 399 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+303,is between 300 and 399 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+304,is between 300 and 399 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+305,is between 300 and 399 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+306,is between 300 and 399 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+307,is between 300 and 399 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+308,is between 300 and 399 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+309,is between 300 and 399 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+310,is between 300 and 399 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+311,is between 300 and 399 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+312,is between 300 and 399 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+313,is between 300 and 399 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+314,is between 300 and 399 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+315,is between 300 and 399 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+316,is between 300 and 399 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+317,is between 300 and 399 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+318,is between 300 and 399 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+319,is between 300 and 399 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+320,is between 300 and 399 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+321,is between 300 and 399 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+322,is between 300 and 399 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+323,is between 300 and 399 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+324,is between 300 and 399 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+325,is between 300 and 399 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+326,is between 300 and 399 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+327,is between 300 and 399 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+328,is between 300 and 399 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+329,is between 300 and 399 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+330,is between 300 and 399 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+331,is between 300 and 399 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+332,is between 300 and 399 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+333,is between 300 and 399 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit,has an odd number in the hundreds digit
+334,is between 300 and 399 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+335,is between 300 and 399 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+336,is between 300 and 399 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+337,is between 300 and 399 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+338,is between 300 and 399 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+339,is between 300 and 399 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+340,is between 300 and 399 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+341,is between 300 and 399 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+342,is between 300 and 399 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+343,is between 300 and 399 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 2 distinct digits,is a perfect cube,has an even number in the tens digit,has an odd number in the hundreds digit
+344,is between 300 and 399 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+345,is between 300 and 399 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+346,is between 300 and 399 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+347,is between 300 and 399 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+348,is between 300 and 399 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+349,is between 300 and 399 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+350,is between 300 and 399 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+351,is between 300 and 399 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+352,is between 300 and 399 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+353,is between 300 and 399 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+354,is between 300 and 399 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+355,is between 300 and 399 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+356,is between 300 and 399 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+357,is between 300 and 399 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+358,is between 300 and 399 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+359,is between 300 and 399 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+360,is between 300 and 399 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+361,is between 300 and 399 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+362,is between 300 and 399 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+363,is between 300 and 399 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+364,is between 300 and 399 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+365,is between 300 and 399 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+366,is between 300 and 399 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+367,is between 300 and 399 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+368,is between 300 and 399 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+369,is between 300 and 399 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+370,is between 300 and 399 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+371,is between 300 and 399 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+372,is between 300 and 399 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+373,is between 300 and 399 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+374,is between 300 and 399 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+375,is between 300 and 399 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+376,is between 300 and 399 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+377,is between 300 and 399 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+378,is between 300 and 399 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+379,is between 300 and 399 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+380,is between 300 and 399 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+381,is between 300 and 399 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+382,is between 300 and 399 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+383,is between 300 and 399 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+384,is between 300 and 399 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+385,is between 300 and 399 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+386,is between 300 and 399 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+387,is between 300 and 399 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+388,is between 300 and 399 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+389,is between 300 and 399 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+390,is between 300 and 399 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+391,is between 300 and 399 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+392,is between 300 and 399 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+393,is between 300 and 399 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+394,is between 300 and 399 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+395,is between 300 and 399 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+396,is between 300 and 399 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+397,is between 300 and 399 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+398,is between 300 and 399 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+399,is between 300 and 399 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+400,is between 400 and 499 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+401,is between 400 and 499 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+402,is between 400 and 499 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+403,is between 400 and 499 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+404,is between 400 and 499 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+405,is between 400 and 499 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+406,is between 400 and 499 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+407,is between 400 and 499 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+408,is between 400 and 499 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+409,is between 400 and 499 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+410,is between 400 and 499 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+411,is between 400 and 499 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+412,is between 400 and 499 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+413,is between 400 and 499 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+414,is between 400 and 499 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+415,is between 400 and 499 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+416,is between 400 and 499 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+417,is between 400 and 499 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+418,is between 400 and 499 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+419,is between 400 and 499 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+420,is between 400 and 499 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+421,is between 400 and 499 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+422,is between 400 and 499 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+423,is between 400 and 499 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+424,is between 400 and 499 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+425,is between 400 and 499 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+426,is between 400 and 499 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+427,is between 400 and 499 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+428,is between 400 and 499 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+429,is between 400 and 499 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+430,is between 400 and 499 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+431,is between 400 and 499 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+432,is between 400 and 499 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+433,is between 400 and 499 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+434,is between 400 and 499 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+435,is between 400 and 499 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+436,is between 400 and 499 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+437,is between 400 and 499 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+438,is between 400 and 499 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+439,is between 400 and 499 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+440,is between 400 and 499 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+441,is between 400 and 499 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+442,is between 400 and 499 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+443,is between 400 and 499 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+444,is between 400 and 499 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has only 1 distinct digit,has an even number in the tens digit,has an even number in the hundreds digit
+445,is between 400 and 499 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+446,is between 400 and 499 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+447,is between 400 and 499 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+448,is between 400 and 499 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+449,is between 400 and 499 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+450,is between 400 and 499 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+451,is between 400 and 499 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+452,is between 400 and 499 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+453,is between 400 and 499 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+454,is between 400 and 499 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+455,is between 400 and 499 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+456,is between 400 and 499 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+457,is between 400 and 499 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+458,is between 400 and 499 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+459,is between 400 and 499 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+460,is between 400 and 499 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+461,is between 400 and 499 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+462,is between 400 and 499 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+463,is between 400 and 499 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+464,is between 400 and 499 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+465,is between 400 and 499 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+466,is between 400 and 499 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+467,is between 400 and 499 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+468,is between 400 and 499 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+469,is between 400 and 499 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+470,is between 400 and 499 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+471,is between 400 and 499 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+472,is between 400 and 499 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+473,is between 400 and 499 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+474,is between 400 and 499 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+475,is between 400 and 499 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+476,is between 400 and 499 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+477,is between 400 and 499 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+478,is between 400 and 499 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+479,is between 400 and 499 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+480,is between 400 and 499 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+481,is between 400 and 499 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+482,is between 400 and 499 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+483,is between 400 and 499 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+484,is between 400 and 499 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+485,is between 400 and 499 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+486,is between 400 and 499 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+487,is between 400 and 499 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+488,is between 400 and 499 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+489,is between 400 and 499 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+490,is between 400 and 499 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+491,is between 400 and 499 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+492,is between 400 and 499 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+493,is between 400 and 499 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+494,is between 400 and 499 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+495,is between 400 and 499 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+496,is between 400 and 499 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+497,is between 400 and 499 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+498,is between 400 and 499 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+499,is between 400 and 499 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+500,is between 500 and 599 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+501,is between 500 and 599 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+502,is between 500 and 599 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+503,is between 500 and 599 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+504,is between 500 and 599 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+505,is between 500 and 599 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+506,is between 500 and 599 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+507,is between 500 and 599 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+508,is between 500 and 599 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+509,is between 500 and 599 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+510,is between 500 and 599 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+511,is between 500 and 599 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+512,is between 500 and 599 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is a perfect cube,has an odd number in the tens digit,has an odd number in the hundreds digit
+513,is between 500 and 599 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+514,is between 500 and 599 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+515,is between 500 and 599 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+516,is between 500 and 599 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+517,is between 500 and 599 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+518,is between 500 and 599 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+519,is between 500 and 599 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+520,is between 500 and 599 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+521,is between 500 and 599 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+522,is between 500 and 599 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+523,is between 500 and 599 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+524,is between 500 and 599 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+525,is between 500 and 599 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+526,is between 500 and 599 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+527,is between 500 and 599 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+528,is between 500 and 599 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+529,is between 500 and 599 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+530,is between 500 and 599 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+531,is between 500 and 599 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+532,is between 500 and 599 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+533,is between 500 and 599 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+534,is between 500 and 599 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+535,is between 500 and 599 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+536,is between 500 and 599 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+537,is between 500 and 599 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+538,is between 500 and 599 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+539,is between 500 and 599 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+540,is between 500 and 599 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+541,is between 500 and 599 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+542,is between 500 and 599 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+543,is between 500 and 599 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+544,is between 500 and 599 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+545,is between 500 and 599 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+546,is between 500 and 599 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+547,is between 500 and 599 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+548,is between 500 and 599 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+549,is between 500 and 599 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+550,is between 500 and 599 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+551,is between 500 and 599 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+552,is between 500 and 599 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+553,is between 500 and 599 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+554,is between 500 and 599 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+555,is between 500 and 599 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit,has an odd number in the hundreds digit
+556,is between 500 and 599 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+557,is between 500 and 599 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+558,is between 500 and 599 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+559,is between 500 and 599 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+560,is between 500 and 599 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+561,is between 500 and 599 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+562,is between 500 and 599 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+563,is between 500 and 599 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+564,is between 500 and 599 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+565,is between 500 and 599 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+566,is between 500 and 599 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+567,is between 500 and 599 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+568,is between 500 and 599 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+569,is between 500 and 599 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that increase from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+570,is between 500 and 599 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+571,is between 500 and 599 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+572,is between 500 and 599 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+573,is between 500 and 599 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+574,is between 500 and 599 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+575,is between 500 and 599 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+576,is between 500 and 599 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,is a perfect square,has an odd number in the tens digit,has an odd number in the hundreds digit
+577,is between 500 and 599 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+578,is between 500 and 599 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+579,is between 500 and 599 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+580,is between 500 and 599 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+581,is between 500 and 599 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+582,is between 500 and 599 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+583,is between 500 and 599 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+584,is between 500 and 599 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+585,is between 500 and 599 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+586,is between 500 and 599 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+587,is between 500 and 599 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+588,is between 500 and 599 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+589,is between 500 and 599 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+590,is between 500 and 599 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+591,is between 500 and 599 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+592,is between 500 and 599 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+593,is between 500 and 599 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+594,is between 500 and 599 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+595,is between 500 and 599 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+596,is between 500 and 599 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+597,is between 500 and 599 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+598,is between 500 and 599 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+599,is between 500 and 599 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+600,is between 600 and 699 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+601,is between 600 and 699 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+602,is between 600 and 699 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+603,is between 600 and 699 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+604,is between 600 and 699 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+605,is between 600 and 699 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+606,is between 600 and 699 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+607,is between 600 and 699 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+608,is between 600 and 699 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+609,is between 600 and 699 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+610,is between 600 and 699 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+611,is between 600 and 699 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+612,is between 600 and 699 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+613,is between 600 and 699 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+614,is between 600 and 699 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+615,is between 600 and 699 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+616,is between 600 and 699 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+617,is between 600 and 699 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+618,is between 600 and 699 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+619,is between 600 and 699 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+620,is between 600 and 699 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+621,is between 600 and 699 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+622,is between 600 and 699 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+623,is between 600 and 699 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+624,is between 600 and 699 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+625,is between 600 and 699 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+626,is between 600 and 699 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+627,is between 600 and 699 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+628,is between 600 and 699 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+629,is between 600 and 699 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+630,is between 600 and 699 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+631,is between 600 and 699 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+632,is between 600 and 699 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+633,is between 600 and 699 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+634,is between 600 and 699 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+635,is between 600 and 699 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+636,is between 600 and 699 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+637,is between 600 and 699 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+638,is between 600 and 699 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+639,is between 600 and 699 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+640,is between 600 and 699 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+641,is between 600 and 699 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+642,is between 600 and 699 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+643,is between 600 and 699 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+644,is between 600 and 699 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+645,is between 600 and 699 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+646,is between 600 and 699 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+647,is between 600 and 699 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+648,is between 600 and 699 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+649,is between 600 and 699 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+650,is between 600 and 699 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+651,is between 600 and 699 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+652,is between 600 and 699 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+653,is between 600 and 699 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+654,is between 600 and 699 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+655,is between 600 and 699 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+656,is between 600 and 699 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+657,is between 600 and 699 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+658,is between 600 and 699 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+659,is between 600 and 699 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+660,is between 600 and 699 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+661,is between 600 and 699 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+662,is between 600 and 699 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+663,is between 600 and 699 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+664,is between 600 and 699 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+665,is between 600 and 699 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+666,is between 600 and 699 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has only 1 distinct digit,has an even number in the tens digit,has an even number in the hundreds digit
+667,is between 600 and 699 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+668,is between 600 and 699 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+669,is between 600 and 699 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+670,is between 600 and 699 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+671,is between 600 and 699 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+672,is between 600 and 699 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+673,is between 600 and 699 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+674,is between 600 and 699 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+675,is between 600 and 699 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+676,is between 600 and 699 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is a perfect square,has an odd number in the tens digit,has an even number in the hundreds digit
+677,is between 600 and 699 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+678,is between 600 and 699 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+679,is between 600 and 699 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+680,is between 600 and 699 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+681,is between 600 and 699 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+682,is between 600 and 699 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+683,is between 600 and 699 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+684,is between 600 and 699 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+685,is between 600 and 699 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+686,is between 600 and 699 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+687,is between 600 and 699 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+688,is between 600 and 699 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+689,is between 600 and 699 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+690,is between 600 and 699 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+691,is between 600 and 699 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+692,is between 600 and 699 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+693,is between 600 and 699 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+694,is between 600 and 699 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+695,is between 600 and 699 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+696,is between 600 and 699 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+697,is between 600 and 699 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+698,is between 600 and 699 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+699,is between 600 and 699 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+700,is between 700 and 799 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+701,is between 700 and 799 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+702,is between 700 and 799 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+703,is between 700 and 799 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+704,is between 700 and 799 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+705,is between 700 and 799 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+706,is between 700 and 799 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+707,is between 700 and 799 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+708,is between 700 and 799 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+709,is between 700 and 799 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+710,is between 700 and 799 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+711,is between 700 and 799 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+712,is between 700 and 799 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+713,is between 700 and 799 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+714,is between 700 and 799 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+715,is between 700 and 799 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+716,is between 700 and 799 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+717,is between 700 and 799 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+718,is between 700 and 799 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+719,is between 700 and 799 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+720,is between 700 and 799 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+721,is between 700 and 799 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+722,is between 700 and 799 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+723,is between 700 and 799 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+724,is between 700 and 799 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+725,is between 700 and 799 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+726,is between 700 and 799 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+727,is between 700 and 799 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+728,is between 700 and 799 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+729,is between 700 and 799 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is a perfect square,is a perfect cube,has an even number in the tens digit,has an odd number in the hundreds digit
+730,is between 700 and 799 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+731,is between 700 and 799 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+732,is between 700 and 799 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+733,is between 700 and 799 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+734,is between 700 and 799 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+735,is between 700 and 799 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+736,is between 700 and 799 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+737,is between 700 and 799 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+738,is between 700 and 799 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+739,is between 700 and 799 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+740,is between 700 and 799 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+741,is between 700 and 799 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+742,is between 700 and 799 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+743,is between 700 and 799 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+744,is between 700 and 799 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+745,is between 700 and 799 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+746,is between 700 and 799 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+747,is between 700 and 799 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+748,is between 700 and 799 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+749,is between 700 and 799 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+750,is between 700 and 799 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+751,is between 700 and 799 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+752,is between 700 and 799 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+753,is between 700 and 799 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+754,is between 700 and 799 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+755,is between 700 and 799 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+756,is between 700 and 799 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+757,is between 700 and 799 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+758,is between 700 and 799 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+759,is between 700 and 799 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+760,is between 700 and 799 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+761,is between 700 and 799 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+762,is between 700 and 799 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+763,is between 700 and 799 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+764,is between 700 and 799 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+765,is between 700 and 799 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+766,is between 700 and 799 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+767,is between 700 and 799 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+768,is between 700 and 799 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+769,is between 700 and 799 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+770,is between 700 and 799 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+771,is between 700 and 799 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+772,is between 700 and 799 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+773,is between 700 and 799 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+774,is between 700 and 799 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+775,is between 700 and 799 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+776,is between 700 and 799 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+777,is between 700 and 799 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit,has an odd number in the hundreds digit
+778,is between 700 and 799 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+779,is between 700 and 799 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+780,is between 700 and 799 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+781,is between 700 and 799 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+782,is between 700 and 799 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+783,is between 700 and 799 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+784,is between 700 and 799 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+785,is between 700 and 799 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+786,is between 700 and 799 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+787,is between 700 and 799 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+788,is between 700 and 799 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+789,is between 700 and 799 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that increase from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+790,is between 700 and 799 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+791,is between 700 and 799 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+792,is between 700 and 799 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+793,is between 700 and 799 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+794,is between 700 and 799 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+795,is between 700 and 799 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+796,is between 700 and 799 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+797,is between 700 and 799 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+798,is between 700 and 799 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+799,is between 700 and 799 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+800,is between 800 and 899 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+801,is between 800 and 899 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+802,is between 800 and 899 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+803,is between 800 and 899 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+804,is between 800 and 899 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+805,is between 800 and 899 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+806,is between 800 and 899 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+807,is between 800 and 899 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+808,is between 800 and 899 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+809,is between 800 and 899 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+810,is between 800 and 899 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+811,is between 800 and 899 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+812,is between 800 and 899 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+813,is between 800 and 899 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+814,is between 800 and 899 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+815,is between 800 and 899 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+816,is between 800 and 899 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+817,is between 800 and 899 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+818,is between 800 and 899 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+819,is between 800 and 899 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+820,is between 800 and 899 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+821,is between 800 and 899 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+822,is between 800 and 899 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+823,is between 800 and 899 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+824,is between 800 and 899 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+825,is between 800 and 899 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+826,is between 800 and 899 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+827,is between 800 and 899 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+828,is between 800 and 899 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+829,is between 800 and 899 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+830,is between 800 and 899 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+831,is between 800 and 899 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+832,is between 800 and 899 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+833,is between 800 and 899 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+834,is between 800 and 899 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+835,is between 800 and 899 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+836,is between 800 and 899 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+837,is between 800 and 899 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+838,is between 800 and 899 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+839,is between 800 and 899 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+840,is between 800 and 899 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+841,is between 800 and 899 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is a perfect square,has an even number in the tens digit,has an even number in the hundreds digit
+842,is between 800 and 899 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+843,is between 800 and 899 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+844,is between 800 and 899 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+845,is between 800 and 899 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+846,is between 800 and 899 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+847,is between 800 and 899 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+848,is between 800 and 899 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+849,is between 800 and 899 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+850,is between 800 and 899 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+851,is between 800 and 899 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+852,is between 800 and 899 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+853,is between 800 and 899 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+854,is between 800 and 899 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+855,is between 800 and 899 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+856,is between 800 and 899 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+857,is between 800 and 899 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+858,is between 800 and 899 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+859,is between 800 and 899 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+860,is between 800 and 899 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+861,is between 800 and 899 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+862,is between 800 and 899 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+863,is between 800 and 899 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+864,is between 800 and 899 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+865,is between 800 and 899 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an even number in the hundreds digit
+866,is between 800 and 899 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+867,is between 800 and 899 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+868,is between 800 and 899 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+869,is between 800 and 899 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+870,is between 800 and 899 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+871,is between 800 and 899 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+872,is between 800 and 899 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+873,is between 800 and 899 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+874,is between 800 and 899 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+875,is between 800 and 899 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+876,is between 800 and 899 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an even number in the hundreds digit
+877,is between 800 and 899 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an even number in the hundreds digit
+878,is between 800 and 899 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+879,is between 800 and 899 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+880,is between 800 and 899 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+881,is between 800 and 899 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+882,is between 800 and 899 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+883,is between 800 and 899 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+884,is between 800 and 899 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+885,is between 800 and 899 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+886,is between 800 and 899 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+887,is between 800 and 899 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an even number in the hundreds digit
+888,is between 800 and 899 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has only 1 distinct digit,has an even number in the tens digit,has an even number in the hundreds digit
+889,is between 800 and 899 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an even number in the hundreds digit
+890,is between 800 and 899 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+891,is between 800 and 899 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+892,is between 800 and 899 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+893,is between 800 and 899 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+894,is between 800 and 899 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+895,is between 800 and 899 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+896,is between 800 and 899 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+897,is between 800 and 899 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+898,is between 800 and 899 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+899,is between 800 and 899 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an even number in the hundreds digit
+900,is between 900 and 999 inclusive,has a 0 in the units digit,has a 0 in the tens digit,has 2 distinct digits,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+901,is between 900 and 999 inclusive,has a 1 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+902,is between 900 and 999 inclusive,has a 2 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+903,is between 900 and 999 inclusive,has a 3 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+904,is between 900 and 999 inclusive,has a 4 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+905,is between 900 and 999 inclusive,has a 5 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+906,is between 900 and 999 inclusive,has a 6 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+907,is between 900 and 999 inclusive,has a 7 in the units digit,has a 0 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+908,is between 900 and 999 inclusive,has a 8 in the units digit,has a 0 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+909,is between 900 and 999 inclusive,has a 9 in the units digit,has a 0 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+910,is between 900 and 999 inclusive,has a 0 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+911,is between 900 and 999 inclusive,has a 1 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+912,is between 900 and 999 inclusive,has a 2 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+913,is between 900 and 999 inclusive,has a 3 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+914,is between 900 and 999 inclusive,has a 4 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+915,is between 900 and 999 inclusive,has a 5 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+916,is between 900 and 999 inclusive,has a 6 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+917,is between 900 and 999 inclusive,has a 7 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+918,is between 900 and 999 inclusive,has a 8 in the units digit,has a 1 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+919,is between 900 and 999 inclusive,has a 9 in the units digit,has a 1 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+920,is between 900 and 999 inclusive,has a 0 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+921,is between 900 and 999 inclusive,has a 1 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+922,is between 900 and 999 inclusive,has a 2 in the units digit,has a 2 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+923,is between 900 and 999 inclusive,has a 3 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+924,is between 900 and 999 inclusive,has a 4 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+925,is between 900 and 999 inclusive,has a 5 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+926,is between 900 and 999 inclusive,has a 6 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+927,is between 900 and 999 inclusive,has a 7 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+928,is between 900 and 999 inclusive,has a 8 in the units digit,has a 2 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+929,is between 900 and 999 inclusive,has a 9 in the units digit,has a 2 in the tens digit,has 2 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+930,is between 900 and 999 inclusive,has a 0 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+931,is between 900 and 999 inclusive,has a 1 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+932,is between 900 and 999 inclusive,has a 2 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+933,is between 900 and 999 inclusive,has a 3 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+934,is between 900 and 999 inclusive,has a 4 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+935,is between 900 and 999 inclusive,has a 5 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+936,is between 900 and 999 inclusive,has a 6 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+937,is between 900 and 999 inclusive,has a 7 in the units digit,has a 3 in the tens digit,has 3 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+938,is between 900 and 999 inclusive,has a 8 in the units digit,has a 3 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+939,is between 900 and 999 inclusive,has a 9 in the units digit,has a 3 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+940,is between 900 and 999 inclusive,has a 0 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+941,is between 900 and 999 inclusive,has a 1 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+942,is between 900 and 999 inclusive,has a 2 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+943,is between 900 and 999 inclusive,has a 3 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+944,is between 900 and 999 inclusive,has a 4 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+945,is between 900 and 999 inclusive,has a 5 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+946,is between 900 and 999 inclusive,has a 6 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+947,is between 900 and 999 inclusive,has a 7 in the units digit,has a 4 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+948,is between 900 and 999 inclusive,has a 8 in the units digit,has a 4 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+949,is between 900 and 999 inclusive,has a 9 in the units digit,has a 4 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+950,is between 900 and 999 inclusive,has a 0 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+951,is between 900 and 999 inclusive,has a 1 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+952,is between 900 and 999 inclusive,has a 2 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+953,is between 900 and 999 inclusive,has a 3 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+954,is between 900 and 999 inclusive,has a 4 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+955,is between 900 and 999 inclusive,has a 5 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+956,is between 900 and 999 inclusive,has a 6 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+957,is between 900 and 999 inclusive,has a 7 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+958,is between 900 and 999 inclusive,has a 8 in the units digit,has a 5 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+959,is between 900 and 999 inclusive,has a 9 in the units digit,has a 5 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+960,is between 900 and 999 inclusive,has a 0 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+961,is between 900 and 999 inclusive,has a 1 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is a perfect square,has an even number in the tens digit,has an odd number in the hundreds digit
+962,is between 900 and 999 inclusive,has a 2 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+963,is between 900 and 999 inclusive,has a 3 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+964,is between 900 and 999 inclusive,has a 4 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+965,is between 900 and 999 inclusive,has a 5 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+966,is between 900 and 999 inclusive,has a 6 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+967,is between 900 and 999 inclusive,has a 7 in the units digit,has a 6 in the tens digit,has 3 distinct digits,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+968,is between 900 and 999 inclusive,has a 8 in the units digit,has a 6 in the tens digit,has 3 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+969,is between 900 and 999 inclusive,has a 9 in the units digit,has a 6 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+970,is between 900 and 999 inclusive,has a 0 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+971,is between 900 and 999 inclusive,has a 1 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+972,is between 900 and 999 inclusive,has a 2 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+973,is between 900 and 999 inclusive,has a 3 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+974,is between 900 and 999 inclusive,has a 4 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+975,is between 900 and 999 inclusive,has a 5 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+976,is between 900 and 999 inclusive,has a 6 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an odd number in the tens digit,has an odd number in the hundreds digit
+977,is between 900 and 999 inclusive,has a 7 in the units digit,has a 7 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+978,is between 900 and 999 inclusive,has a 8 in the units digit,has a 7 in the tens digit,has 3 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+979,is between 900 and 999 inclusive,has a 9 in the units digit,has a 7 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+980,is between 900 and 999 inclusive,has a 0 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+981,is between 900 and 999 inclusive,has a 1 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+982,is between 900 and 999 inclusive,has a 2 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+983,is between 900 and 999 inclusive,has a 3 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,is prime,has an even number in the tens digit,has an odd number in the hundreds digit
+984,is between 900 and 999 inclusive,has a 4 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+985,is between 900 and 999 inclusive,has a 5 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+986,is between 900 and 999 inclusive,has a 6 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+987,is between 900 and 999 inclusive,has a 7 in the units digit,has a 8 in the tens digit,has 3 distinct digits,has digits that decrease from left to right,has an even number in the tens digit,has an odd number in the hundreds digit
+988,is between 900 and 999 inclusive,has a 8 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+989,is between 900 and 999 inclusive,has a 9 in the units digit,has a 8 in the tens digit,has 2 distinct digits,has an even number in the tens digit,has an odd number in the hundreds digit
+990,is between 900 and 999 inclusive,has a 0 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+991,is between 900 and 999 inclusive,has a 1 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+992,is between 900 and 999 inclusive,has a 2 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+993,is between 900 and 999 inclusive,has a 3 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+994,is between 900 and 999 inclusive,has a 4 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+995,is between 900 and 999 inclusive,has a 5 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+996,is between 900 and 999 inclusive,has a 6 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+997,is between 900 and 999 inclusive,has a 7 in the units digit,has a 9 in the tens digit,has 2 distinct digits,is prime,has an odd number in the tens digit,has an odd number in the hundreds digit
+998,is between 900 and 999 inclusive,has a 8 in the units digit,has a 9 in the tens digit,has 2 distinct digits,has an odd number in the tens digit,has an odd number in the hundreds digit
+999,is between 900 and 999 inclusive,has a 9 in the units digit,has a 9 in the tens digit,has only 1 distinct digit,has an odd number in the tens digit,has an odd number in the hundreds digit

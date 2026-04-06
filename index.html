@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professor Thousand</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg: #111417;
+        --panel: #1b2228;
+        --panel-2: #232d35;
+        --screen: #0a0f0a;
+        --border: #37444f;
+        --text: #e8edf2;
+        --muted: #a4b0bb;
+        --red: #ff4d4d;
+        --green: #69ff8a;
+        --yellow: #ffd86b;
+        --blue: #79b8ff;
+        --shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(
+          circle at top,
+          #1a232b 0%,
+          #111417 45%,
+          #0c0f12 100%
+        );
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        padding: 24px;
+      }
+
+      .app {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 18px;
+      }
+
+      .title h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: 1px;
+      }
+
+      .title p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .top-bar {
+        display: flex;
+        justify-content: center;
+        margin: 18px 0 22px;
+        min-height: 48px;
+      }
+
+      .new-game-btn {
+        background: var(--blue);
+        color: #08131f;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 18px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        display: none;
+      }
+
+      .new-game-btn.show {
+        display: inline-block;
+      }
+
+      .new-game-btn:hover {
+        filter: brightness(1.07);
+      }
+
+      .play-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        gap: 18px;
+        align-items: stretch;
+        margin-bottom: 20px;
+      }
+
+      .display-card {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        box-shadow: var(--shadow);
+        min-width: 0;
+      }
+
+      .display-label {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .calculator-display,
+      .guess-input-display {
+        width: 100%;
+        min-height: 86px;
+        border-radius: 14px;
+        border: 2px solid #2c3a34;
+        background: linear-gradient(180deg, #111711 0%, #091009 100%);
+        box-shadow:
+          inset 0 0 18px rgba(0, 0, 0, 0.6),
+          inset 0 0 1px rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 14px 18px;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        letter-spacing: 6px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .secret-display {
+        color: var(--red);
+        text-shadow:
+          0 0 8px rgba(255, 77, 77, 0.7),
+          0 0 16px rgba(255, 77, 77, 0.45);
+      }
+
+      .guess-input-display {
+        color: var(--green);
+        text-shadow:
+          0 0 8px rgba(105, 255, 138, 0.7),
+          0 0 16px rgba(105, 255, 138, 0.4);
+        caret-color: var(--green);
+        outline: none;
+        appearance: textfield;
+      }
+
+      .guess-input-display::placeholder {
+        color: rgba(105, 255, 138, 0.35);
+        text-shadow: none;
+      }
+
+      .guess-input-display::-webkit-outer-spin-button,
+      .guess-input-display::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      .submit-wrap {
+        display: flex;
+        align-items: end;
+      }
+
+      .guess-btn {
+        min-height: 116px;
+        padding: 0 26px;
+        border-radius: 18px;
+        border: none;
+        background: var(--yellow);
+        color: #241a00;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        min-width: 150px;
+      }
+
+      .guess-btn:hover:not(:disabled) {
+        filter: brightness(1.05);
+      }
+
+      .guess-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .status-row {
+        min-height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .status-message {
+        color: var(--yellow);
+        font-size: 0.95rem;
+        min-height: 20px;
+      }
+
+      .professor-box {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px dashed rgba(255, 255, 255, 0.16);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-bottom: 18px;
+        min-height: 72px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .prof-label {
+        font-weight: bold;
+        color: var(--blue);
+        white-space: nowrap;
+        padding-top: 2px;
+      }
+
+      .prof-text {
+        color: var(--text);
+        line-height: 1.5;
+        flex: 1;
+      }
+
+      .guess-history {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 16px;
+        box-shadow: var(--shadow);
+        margin-bottom: 18px;
+      }
+
+      .section-title {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .guess-chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .guess-chip {
+        background: rgba(121, 184, 255, 0.12);
+        color: #d8ebff;
+        border: 1px solid rgba(121, 184, 255, 0.28);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.95rem;
+      }
+
+      .log {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .log-entry {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .log-entry.win {
+        border-color: rgba(105, 255, 138, 0.35);
+        background: linear-gradient(
+          180deg,
+          rgba(25, 55, 31, 0.9),
+          rgba(19, 41, 25, 0.95)
+        );
+      }
+
+      .log-header {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--blue);
+      }
+
+      .log-line {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .floating-win {
+        position: sticky;
+        top: 12px;
+        z-index: 20;
+        margin-bottom: 16px;
+        background: linear-gradient(180deg, #23492c, #18341e);
+        border: 1px solid rgba(105, 255, 138, 0.35);
+        border-radius: 18px;
+        padding: 14px 16px;
+        box-shadow: var(--shadow);
+        display: none;
+        align-items: start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .floating-win.show {
+        display: flex;
+      }
+
+      .floating-win-text {
+        line-height: 1.45;
+      }
+
+      .dismiss-btn {
+        background: transparent;
+        color: #dfffe6;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .shake {
+        animation: shake 0.34s linear;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-8px);
+        }
+        40% {
+          transform: translateX(8px);
+        }
+        60% {
+          transform: translateX(-6px);
+        }
+        80% {
+          transform: translateX(6px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @media (max-width: 860px) {
+        .play-row {
+          grid-template-columns: 1fr;
+        }
+
+        .submit-wrap {
+          align-items: stretch;
+        }
+
+        .guess-btn {
+          min-height: 64px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="title">
+        <h1>Professor Thousand</h1>
+        <p>Guess the professor’s secret number from 1 to 999.</p>
+      </div>
+
+      <div id="floatingWin" class="floating-win">
+        <div id="floatingWinText" class="floating-win-text"></div>
+        <button id="dismissWinBtn" class="dismiss-btn" type="button">
+          Dismiss
+        </button>
+      </div>
+
+      <div class="top-bar">
+        <button id="newGameBtn" class="new-game-btn" type="button">
+          New Game
+        </button>
+      </div>
+
+      <div class="play-row">
+        <div class="display-card">
+          <div class="display-label">Professor Thousand</div>
+          <div id="secretDisplay" class="calculator-display secret-display">
+            ***
+          </div>
+        </div>
+
+        <div class="display-card">
+          <div class="display-label">Your Guess</div>
+          <input
+            id="guessInput"
+            class="guess-input-display"
+            type="text"
+            inputmode="numeric"
+            maxlength="3"
+            placeholder="---"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="submit-wrap">
+          <button id="guessBtn" class="guess-btn" type="button">SUBMIT</button>
+        </div>
+      </div>
+
+      <div class="status-row">
+        <div id="statusMessage" class="status-message"></div>
+      </div>
+
+      <div id="professorBox" class="professor-box">
+        <div class="prof-label">Professor Thousand:</div>
+        <div id="professorText" class="prof-text">
+          I await your first guess.
+        </div>
+      </div>
+
+      <div class="guess-history">
+        <h2 class="section-title">Previous Guesses</h2>
+        <div id="guessChipRow" class="guess-chip-row"></div>
+      </div>
+
+      <div id="log" class="log"></div>
+    </div>
+
+    <script>
+      const FILE_A_PATH = "fileA.txt";
+      const FILE_B_PATH = "fileB.txt";
+      const FILE_C_PATH = "fileC.txt";
+      const THINKING_DELAY = 2000;
+
+      const secretDisplay = document.getElementById("secretDisplay");
+      const guessInput = document.getElementById("guessInput");
+      const guessBtn = document.getElementById("guessBtn");
+      const newGameBtn = document.getElementById("newGameBtn");
+      const statusMessage = document.getElementById("statusMessage");
+      const professorText = document.getElementById("professorText");
+      const guessChipRow = document.getElementById("guessChipRow");
+      const log = document.getElementById("log");
+      const floatingWin = document.getElementById("floatingWin");
+      const floatingWinText = document.getElementById("floatingWinText");
+      const dismissWinBtn = document.getElementById("dismissWinBtn");
+
+      let fileAData = [];
+      let fileBData = [];
+      let fileCData = [];
+
+      let secretNumber = null;
+      let guessCount = 0;
+      let previousGuesses = new Set();
+      let usedFeedbackLines = new Set();
+
+      let gameReady = false;
+      let isThinking = false;
+      let gameWon = false;
+      let thinkingInterval = null;
+
+      let pendingLogEntry = null;
+
+      init();
+
+      async function init() {
+        setInputEnabled(false);
+        hideNewGameButton();
+        showStatusMessage("Loading clue files...");
+        setProfessorText("Loading my notebooks...");
+
+        try {
+          const [fileAText, fileBText, fileCText] = await Promise.all([
+            fetch(FILE_A_PATH).then(handleFetchResponse),
+            fetch(FILE_B_PATH).then(handleFetchResponse),
+            fetch(FILE_C_PATH).then(handleFetchResponse),
+          ]);
+
+          fileAData = parseClueFile(fileAText);
+          fileBData = parseClueFile(fileBText);
+          fileCData = parseClueFile(fileCText);
+
+          validateData(fileAData, "fileA");
+          validateData(fileBData, "fileB");
+          validateData(fileCData, "fileC");
+
+          startNewGame();
+          gameReady = true;
+        } catch (error) {
+          console.error(error);
+          showStatusMessage("Could not load one or more clue files.");
+          addSystemLogEntry(
+            "Load Error",
+            [
+              "I couldn’t load one or more clue files.",
+              "Make sure fileA.txt, fileB.txt, and fileC.txt are in the same folder as this HTML file, and run the page through Live Server or another local server.",
+            ],
+            true,
+          );
+          setProfessorText("Something is wrong with my notebooks.");
+        }
+      }
+
+      async function handleFetchResponse(response) {
+        if (!response.ok) {
+          throw new Error(
+            `Failed to load ${response.url} (${response.status})`,
+          );
+        }
+        return response.text();
+      }
+
+      function parseClueFile(text) {
+        const lines = text
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter((line) => line !== "");
+
+        const data = new Array(1000);
+
+        for (const line of lines) {
+          const parts = line
+            .split(",")
+            .map((part) => part.trim())
+            .filter((part) => part !== "");
+          const number = Number(parts[0]);
+          const descriptors = parts.slice(1);
+
+          data[number] = {
+            number,
+            descriptors,
+          };
+        }
+
+        return data;
+      }
+
+      function validateData(data, label) {
+        for (let i = 1; i <= 999; i++) {
+          if (!data[i]) {
+            throw new Error(`${label} is missing row ${i}`);
+          }
+
+          if (data[i].number !== i) {
+            throw new Error(`${label} row ${i} is malformed`);
+          }
+
+          for (const descriptor of data[i].descriptors) {
+            if (
+              !descriptor.startsWith("is ") &&
+              !descriptor.startsWith("has ")
+            ) {
+              throw new Error(
+                `${label} row ${i} has invalid descriptor: "${descriptor}"`,
+              );
+            }
+          }
+        }
+      }
+
+      function startNewGame() {
+        secretNumber = getRandomInt(1, 999);
+        guessCount = 0;
+        previousGuesses = new Set();
+        usedFeedbackLines = new Set();
+        pendingLogEntry = null;
+
+        isThinking = false;
+        gameWon = false;
+        stopThinkingAnimation();
+        hideFloatingWin();
+        hideNewGameButton();
+
+        secretDisplay.textContent = "***";
+        guessInput.value = "";
+        clearStatusMessage();
+        setProfessorText("I await your first guess.");
+        guessChipRow.innerHTML = "";
+        log.innerHTML = "";
+
+        setInputEnabled(true);
+
+        addSystemLogEntry("NEW GAME", [
+          "Professor Thousand has chosen a secret number from 1 to 999.",
+          "Enter a guess to begin.",
+        ]);
+
+        guessInput.focus();
+      }
+
+      newGameBtn.addEventListener("click", startNewGame);
+      dismissWinBtn.addEventListener("click", hideFloatingWin);
+      guessBtn.addEventListener("click", submitGuess);
+
+      guessInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          submitGuess();
+        }
+      });
+
+      guessInput.addEventListener("input", () => {
+        guessInput.value = guessInput.value.replace(/\D/g, "").slice(0, 3);
+        clearStatusMessage();
+      });
+
+      async function submitGuess() {
+        if (!gameReady || isThinking || gameWon) return;
+
+        const raw = guessInput.value.trim();
+
+        if (!/^\d{1,3}$/.test(raw)) {
+          shakeElement(guessInput);
+          return;
+        }
+
+        const guess = Number(raw);
+
+        if (guess < 1 || guess > 999) {
+          shakeElement(guessInput);
+          return;
+        }
+
+        if (previousGuesses.has(guess)) {
+          shakeElement(guessInput);
+          showStatusMessage("You already guessed that number.");
+          return;
+        }
+
+        flushPendingLogEntry();
+
+        previousGuesses.add(guess);
+        guessCount++;
+        addGuessChip(guess);
+
+        clearStatusMessage();
+
+        if (guess === secretNumber) {
+          handleWin(guess);
+          return;
+        }
+
+        setInputEnabled(false);
+        startThinkingAnimation();
+        await delay(THINKING_DELAY);
+        stopThinkingAnimation();
+
+        const feedback = buildFeedbackForGuess(guess);
+
+        setProfessorText(feedback.spokenParagraph);
+
+        pendingLogEntry = {
+          guessNumber: guessCount,
+          guess,
+          logParagraph: feedback.logParagraph,
+        };
+
+        setInputEnabled(true);
+        guessInput.value = "";
+        guessInput.focus();
+      }
+
+      function buildFeedbackForGuess(guess) {
+        const secretA = fileAData[secretNumber].descriptors;
+        const guessA = fileAData[guess].descriptors;
+
+        const secretB = fileBData[secretNumber].descriptors;
+        const guessB = fileBData[guess].descriptors;
+
+        const secretC = fileCData[secretNumber].descriptors;
+        const guessC = fileCData[guess].descriptors;
+
+        const similarityDescriptor =
+          chooseSimilarityDescriptor(guessA, secretA) ??
+          chooseSimilarityDescriptor(guessB, secretB) ??
+          chooseSimilarityDescriptor(guessC, secretC) ??
+          null;
+
+        const differenceDescriptor =
+          chooseDifferenceDescriptor(guessC, secretC) ??
+          chooseDifferenceDescriptor(guessB, secretB) ??
+          chooseDifferenceDescriptor(guessA, secretA) ??
+          null;
+
+        let spokenParagraph;
+        let logParagraph;
+        let similarityLogLine;
+        let differenceLogLine;
+
+        if (similarityDescriptor) {
+          similarityLogLine = `My number ${similarityDescriptor}.`;
+        } else {
+          similarityLogLine = `My number shares something in common with your guess.`;
+        }
+
+        if (differenceDescriptor) {
+          differenceLogLine = `My number ${invertDescriptor(differenceDescriptor)}.`;
+        } else {
+          differenceLogLine = `My number differs from your guess in at least one way.`;
+        }
+
+        if (similarityDescriptor && differenceDescriptor) {
+          spokenParagraph =
+            `That's not right, but my number, like the number you guessed, ${similarityDescriptor}. ` +
+            `However, you guessed a number that ${differenceDescriptor}, but my number ${invertDescriptor(differenceDescriptor)}.`;
+        } else if (similarityDescriptor && !differenceDescriptor) {
+          spokenParagraph =
+            `That's not right, but my number, like the number you guessed, ${similarityDescriptor}. ` +
+            `However, your guess still differs from my number in at least one way.`;
+        } else if (!similarityDescriptor && differenceDescriptor) {
+          spokenParagraph =
+            `That's not right, but my number does share something in common with the number you guessed. ` +
+            `However, you guessed a number that ${differenceDescriptor}, but my number ${invertDescriptor(differenceDescriptor)}.`;
+        } else {
+          spokenParagraph =
+            `That's not right, but my number does share something in common with the number you guessed. ` +
+            `However, your guess still differs from my number in at least one way.`;
+        }
+
+        logParagraph = `${similarityLogLine} ${differenceLogLine}`;
+
+        usedFeedbackLines.add(similarityLogLine);
+        usedFeedbackLines.add(differenceLogLine);
+
+        return {
+          spokenParagraph,
+          logParagraph,
+        };
+      }
+
+      function chooseSimilarityDescriptor(guessDescriptors, secretDescriptors) {
+        const secretSet = new Set(secretDescriptors);
+
+        const candidates = guessDescriptors.filter((descriptor) => {
+          const finalLine = `My number ${descriptor}.`;
+          return secretSet.has(descriptor) && !usedFeedbackLines.has(finalLine);
+        });
+
+        if (candidates.length === 0) return null;
+        return pickRandom(candidates);
+      }
+
+      function chooseDifferenceDescriptor(guessDescriptors, secretDescriptors) {
+        const secretSet = new Set(secretDescriptors);
+
+        const candidates = guessDescriptors.filter((descriptor) => {
+          if (secretSet.has(descriptor)) return false;
+
+          const invertedLine = `My number ${invertDescriptor(descriptor)}.`;
+          return !usedFeedbackLines.has(invertedLine);
+        });
+
+        if (candidates.length === 0) return null;
+        return pickRandom(candidates);
+      }
+
+      function invertDescriptor(descriptor) {
+        if (descriptor.startsWith("is ")) {
+          return "is not " + descriptor.slice(3);
+        }
+
+        if (descriptor.startsWith("has ")) {
+          return "doesn't have " + descriptor.slice(4);
+        }
+
+        return "is not described by: " + descriptor;
+      }
+
+      function handleWin(guess) {
+        gameWon = true;
+        secretDisplay.textContent = formatThreeDigits(secretNumber);
+        guessInput.value = String(guess);
+
+        const winParagraph =
+          `Excellent! You found my secret number: ${formatThreeDigits(secretNumber)}. ` +
+          `You solved it in ${guessCount} ${guessCount === 1 ? "guess" : "guesses"}.`;
+
+        setProfessorText(winParagraph);
+        addWinLogEntry(guessCount, guess, winParagraph);
+        showFloatingWin(winParagraph);
+        showNewGameButton();
+
+        setInputEnabled(false);
+        pendingLogEntry = null;
+      }
+
+      function flushPendingLogEntry() {
+        if (!pendingLogEntry) return;
+
+        addGuessLogEntry(
+          pendingLogEntry.guessNumber,
+          pendingLogEntry.guess,
+          pendingLogEntry.logParagraph,
+        );
+
+        pendingLogEntry = null;
+      }
+
+      function setProfessorText(text) {
+        professorText.textContent = text;
+      }
+
+      function addGuessChip(guess) {
+        const chip = document.createElement("div");
+        chip.className = "guess-chip";
+        chip.textContent = guess;
+        guessChipRow.prepend(chip);
+      }
+
+      function addGuessLogEntry(guessNumber, guess, paragraph) {
+        const entry = document.createElement("div");
+        entry.className = "log-entry";
+
+        entry.innerHTML = `
+        <div class="log-header">Guess #${guessNumber}, ${guess}:</div>
+        <p class="log-line">${escapeHtml(paragraph)}</p>
+      `;
+
+        log.prepend(entry);
+      }
+
+      function addWinLogEntry(guessNumber, guess, paragraph) {
+        const entry = document.createElement("div");
+        entry.className = "log-entry win";
+
+        entry.innerHTML = `
+        <div class="log-header">Guess #${guessNumber}, ${guess}:</div>
+        <p class="log-line">${escapeHtml(paragraph)}</p>
+      `;
+
+        log.prepend(entry);
+      }
+
+      function addSystemLogEntry(header, lines, isError = false) {
+        const entry = document.createElement("div");
+        entry.className = "log-entry";
+
+        if (isError) {
+          entry.style.borderColor = "rgba(255, 77, 77, 0.35)";
+        }
+
+        entry.innerHTML = `
+        <div class="log-header">${escapeHtml(header)}</div>
+        ${lines.map((line) => `<p class="log-line">${escapeHtml(line)}</p>`).join("")}
+      `;
+
+        log.prepend(entry);
+      }
+
+      function showFloatingWin(text) {
+        floatingWinText.textContent = text;
+        floatingWin.classList.add("show");
+      }
+
+      function hideFloatingWin() {
+        floatingWin.classList.remove("show");
+      }
+
+      function showNewGameButton() {
+        newGameBtn.classList.add("show");
+      }
+
+      function hideNewGameButton() {
+        newGameBtn.classList.remove("show");
+      }
+
+      function showStatusMessage(message) {
+        statusMessage.textContent = message;
+      }
+
+      function clearStatusMessage() {
+        statusMessage.textContent = "";
+      }
+
+      function setInputEnabled(enabled) {
+        guessInput.disabled = !enabled;
+        guessBtn.disabled = !enabled;
+      }
+
+      function startThinkingAnimation() {
+        isThinking = true;
+
+        const frames = ["Hmmm", "Hmmm.", "Hmmm..", "Hmmm..."];
+        let index = 0;
+        professorText.textContent = frames[0];
+
+        thinkingInterval = setInterval(() => {
+          index = (index + 1) % frames.length;
+          professorText.textContent = frames[index];
+        }, 350);
+      }
+
+      function stopThinkingAnimation() {
+        isThinking = false;
+
+        if (thinkingInterval) {
+          clearInterval(thinkingInterval);
+          thinkingInterval = null;
+        }
+      }
+
+      function shakeElement(element) {
+        element.classList.remove("shake");
+        void element.offsetWidth;
+        element.classList.add("shake");
+      }
+
+      function formatThreeDigits(number) {
+        return String(number).padStart(3, "0");
+      }
+
+      function escapeHtml(text) {
+        return text
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function pickRandom(array) {
+        return array[Math.floor(Math.random() * array.length)];
+      }
+
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function delay(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+    </script>
+  </body>
+</html>
