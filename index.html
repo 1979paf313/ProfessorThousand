@@ -111,6 +111,7 @@
         margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
+        text-align: center;
       }
 
       .calculator-display,
@@ -125,7 +126,8 @@
           inset 0 0 1px rgba(255, 255, 255, 0.15);
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        text-align: center;
         padding: 14px 18px;
         font-family: "Lucida Console", "Courier New", monospace;
         font-size: clamp(2.2rem, 5vw, 3.6rem);
@@ -208,34 +210,61 @@
         background: rgba(255, 255, 255, 0.04);
         border: 1px dashed rgba(255, 255, 255, 0.16);
         border-radius: 14px;
-        padding: 14px 16px;
+        padding: 16px;
         margin-bottom: 18px;
-        min-height: 72px;
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
+        min-height: 180px;
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        gap: 16px;
+        align-items: center;
       }
 
-      .prof-label {
-        font-weight: bold;
-        color: var(--blue);
-        white-space: nowrap;
-        padding-top: 2px;
+      .professor-image-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+      }
+
+      .professor-image {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+
+      .professor-text-wrap {
+        display: flex;
+        align-items: center;
+        min-width: 0;
       }
 
       .prof-text {
         color: var(--text);
         line-height: 1.5;
-        flex: 1;
+        font-size: 1.5rem;
+        width: 100%;
       }
 
-      .guess-history {
+      .prof-name {
+        color: var(--blue);
+        font-weight: bold;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+
+      .info-card {
         background: linear-gradient(180deg, var(--panel), var(--panel-2));
         border: 1px solid var(--border);
         border-radius: 18px;
         padding: 16px;
         box-shadow: var(--shadow);
-        margin-bottom: 18px;
       }
 
       .section-title {
@@ -259,6 +288,21 @@
         border-radius: 999px;
         padding: 8px 12px;
         font-size: 0.95rem;
+      }
+
+      .remaining-count {
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+        font-weight: bold;
+        color: var(--green);
+        text-align: center;
+        line-height: 1.2;
+        margin-top: 6px;
+      }
+
+      .remaining-caption {
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-align: center;
       }
 
       .log {
@@ -355,7 +399,8 @@
       }
 
       @media (max-width: 860px) {
-        .play-row {
+        .play-row,
+        .info-grid {
           grid-template-columns: 1fr;
         }
 
@@ -366,6 +411,16 @@
         .guess-btn {
           min-height: 64px;
           width: 100%;
+        }
+
+        .professor-box {
+          grid-template-columns: 1fr;
+          min-height: 0;
+        }
+
+        .professor-image-wrap {
+          max-width: 180px;
+          margin: 0 auto;
         }
       }
     </style>
@@ -421,24 +476,49 @@
       </div>
 
       <div id="professorBox" class="professor-box">
-        <div class="prof-label">Professor Thousand:</div>
-        <div id="professorText" class="prof-text">
-          I await your first guess.
+        <div class="professor-image-wrap">
+          <img
+            src="ProfessorThousand.png"
+            alt="Professor Thousand"
+            class="professor-image"
+          />
+        </div>
+        <div class="professor-text-wrap">
+          <div id="professorText" class="prof-text">
+            <span class="prof-name">Professor Thousand:</span> I await your
+            first guess.
+          </div>
         </div>
       </div>
 
-      <div class="guess-history">
-        <h2 class="section-title">Previous Guesses</h2>
-        <div id="guessChipRow" class="guess-chip-row"></div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h2 class="section-title">Previous Guesses</h2>
+          <div id="guessChipRow" class="guess-chip-row"></div>
+        </div>
+
+        <div class="info-card">
+          <h2 class="section-title">Numbers Still Possible</h2>
+          <div id="remainingCount" class="remaining-count">999</div>
+          <div class="remaining-caption">
+            Valid, unguessed numbers consistent with all clues so far.
+          </div>
+        </div>
       </div>
 
       <div id="log" class="log"></div>
     </div>
 
     <script>
-      const FILE_A_PATH = "fileA.txt";
-      const FILE_B_PATH = "fileB.txt";
-      const FILE_C_PATH = "fileC.txt";
+      const FEEDBACK_FILES = [
+        "feedback_identity.txt",
+        "feedback_digits.txt",
+        "feedback_digit_patterns.txt",
+        "feedback_factors.txt",
+        "feedback_multiples.txt",
+        "feedback_remainders.txt",
+      ];
+
       const THINKING_DELAY = 2000;
 
       const secretDisplay = document.getElementById("secretDisplay");
@@ -448,25 +528,31 @@
       const statusMessage = document.getElementById("statusMessage");
       const professorText = document.getElementById("professorText");
       const guessChipRow = document.getElementById("guessChipRow");
+      const remainingCount = document.getElementById("remainingCount");
       const log = document.getElementById("log");
       const floatingWin = document.getElementById("floatingWin");
       const floatingWinText = document.getElementById("floatingWinText");
       const dismissWinBtn = document.getElementById("dismissWinBtn");
 
-      let fileAData = [];
-      let fileBData = [];
-      let fileCData = [];
+      let cluesByNumber = [];
+      let clueTextSetsByNumber = [];
 
       let secretNumber = null;
       let guessCount = 0;
       let previousGuesses = new Set();
-      let usedFeedbackLines = new Set();
+
+      let usedClueTexts = new Set();
+
+      let bestSimilarityRankByCategory = new Map();
+      let bestDissimilarityRankByCategory = new Map();
+
+      let requiredDescriptors = new Set();
+      let forbiddenDescriptors = new Set();
 
       let gameReady = false;
       let isThinking = false;
       let gameWon = false;
       let thinkingInterval = null;
-
       let pendingLogEntry = null;
 
       init();
@@ -476,21 +562,14 @@
         hideNewGameButton();
         showStatusMessage("Loading clue files...");
         setProfessorText("Loading my notebooks...");
+        remainingCount.textContent = "---";
 
         try {
-          const [fileAText, fileBText, fileCText] = await Promise.all([
-            fetch(FILE_A_PATH).then(handleFetchResponse),
-            fetch(FILE_B_PATH).then(handleFetchResponse),
-            fetch(FILE_C_PATH).then(handleFetchResponse),
-          ]);
+          const texts = await Promise.all(
+            FEEDBACK_FILES.map((path) => fetch(path).then(handleFetchResponse)),
+          );
 
-          fileAData = parseClueFile(fileAText);
-          fileBData = parseClueFile(fileBText);
-          fileCData = parseClueFile(fileCText);
-
-          validateData(fileAData, "fileA");
-          validateData(fileBData, "fileB");
-          validateData(fileCData, "fileC");
+          buildClueDatabase(texts);
 
           startNewGame();
           gameReady = true;
@@ -501,7 +580,7 @@
             "Load Error",
             [
               "I couldn’t load one or more clue files.",
-              "Make sure fileA.txt, fileB.txt, and fileC.txt are in the same folder as this HTML file, and run the page through Live Server or another local server.",
+              "Make sure all feedback files and ProfessorThousand.png are in the same folder as this HTML file, and run the page through Live Server or another local server.",
             ],
             true,
           );
@@ -518,63 +597,98 @@
         return response.text();
       }
 
-      function parseClueFile(text) {
+      function buildClueDatabase(fileTexts) {
+        cluesByNumber = Array.from({ length: 1000 }, () => []);
+        const seenKeysByNumber = Array.from({ length: 1000 }, () => new Set());
+
+        for (const text of fileTexts) {
+          const parsed = parseFeedbackFile(text);
+
+          for (let n = 1; n <= 999; n++) {
+            for (const clue of parsed[n]) {
+              const key = `${clue.text}||${clue.category}`;
+              if (!seenKeysByNumber[n].has(key)) {
+                cluesByNumber[n].push(clue);
+                seenKeysByNumber[n].add(key);
+              }
+            }
+          }
+        }
+
+        clueTextSetsByNumber = cluesByNumber.map(
+          (clues) => new Set(clues.map((clue) => clue.text)),
+        );
+      }
+
+      function parseFeedbackFile(text) {
+        const rows = Array.from({ length: 1000 }, () => []);
         const lines = text
           .split(/\r?\n/)
           .map((line) => line.trim())
           .filter((line) => line !== "");
 
-        const data = new Array(1000);
-
         for (const line of lines) {
-          const parts = line
-            .split(",")
-            .map((part) => part.trim())
-            .filter((part) => part !== "");
+          const parts = line.split(",").map((part) => part.trim());
           const number = Number(parts[0]);
-          const descriptors = parts.slice(1);
 
-          data[number] = {
-            number,
-            descriptors,
-          };
+          if (!Number.isInteger(number) || number < 1 || number > 999) continue;
+
+          for (let i = 1; i < parts.length; i++) {
+            const segment = parts[i];
+            if (!segment) continue;
+
+            const pieces = segment
+              .split("|")
+              .map((piece) => piece.trim())
+              .filter(Boolean);
+            if (pieces.length === 0) continue;
+
+            const clueText = pieces[0];
+            const metadata = {};
+
+            for (let j = 1; j < pieces.length; j++) {
+              const [key, value] = pieces[j].split("=");
+              if (!key) continue;
+              metadata[key.trim()] = (value ?? "").trim();
+            }
+
+            rows[number].push({
+              text: clueText,
+              category: metadata.category || "uncategorized",
+              tier: toNumber(metadata.tier, 99),
+              rank: toNumber(metadata.rank, 999),
+              candissim: metadata.candissim === "1",
+              distier: toNumber(metadata.distier, toNumber(metadata.tier, 99)),
+              disrank: toNumber(metadata.disrank, toNumber(metadata.rank, 999)),
+            });
+          }
         }
 
-        return data;
+        return rows;
       }
 
-      function validateData(data, label) {
-        for (let i = 1; i <= 999; i++) {
-          if (!data[i]) {
-            throw new Error(`${label} is missing row ${i}`);
-          }
-
-          if (data[i].number !== i) {
-            throw new Error(`${label} row ${i} is malformed`);
-          }
-
-          for (const descriptor of data[i].descriptors) {
-            if (
-              !descriptor.startsWith("is ") &&
-              !descriptor.startsWith("has ")
-            ) {
-              throw new Error(
-                `${label} row ${i} has invalid descriptor: "${descriptor}"`,
-              );
-            }
-          }
-        }
+      function toNumber(value, fallback) {
+        const num = Number(value);
+        return Number.isFinite(num) ? num : fallback;
       }
 
       function startNewGame() {
         secretNumber = getRandomInt(1, 999);
         guessCount = 0;
         previousGuesses = new Set();
-        usedFeedbackLines = new Set();
-        pendingLogEntry = null;
 
+        usedClueTexts = new Set();
+
+        bestSimilarityRankByCategory = new Map();
+        bestDissimilarityRankByCategory = new Map();
+
+        requiredDescriptors = new Set();
+        forbiddenDescriptors = new Set();
+
+        pendingLogEntry = null;
         isThinking = false;
         gameWon = false;
+
         stopThinkingAnimation();
         hideFloatingWin();
         hideNewGameButton();
@@ -587,8 +701,9 @@
         log.innerHTML = "";
 
         setInputEnabled(true);
+        updateRemainingCount();
 
-        addSystemLogEntry("NEW GAME", [
+        addSystemLogEntry("New Game", [
           "Professor Thousand has chosen a secret number from 1 to 999.",
           "Enter a guess to begin.",
         ]);
@@ -644,6 +759,7 @@
 
         if (guess === secretNumber) {
           handleWin(guess);
+          updateRemainingCount();
           return;
         }
 
@@ -654,6 +770,34 @@
 
         const feedback = buildFeedbackForGuess(guess);
 
+        if (feedback.similarityClue) {
+          debugCandidateClue(feedback.similarityClue, "sim");
+        }
+
+        if (feedback.dissimilarityClue) {
+          debugCandidateClue(feedback.dissimilarityClue, "dissim");
+        }
+
+        if (feedback.similarityClue) {
+          usedClueTexts.add(feedback.similarityClue.text);
+          requiredDescriptors.add(feedback.similarityClue.text);
+          updateBestRank(
+            bestSimilarityRankByCategory,
+            feedback.similarityClue.category,
+            feedback.similarityClue.rank,
+          );
+        }
+
+        if (feedback.dissimilarityClue) {
+          usedClueTexts.add(feedback.dissimilarityClue.text);
+          forbiddenDescriptors.add(feedback.dissimilarityClue.text);
+          updateBestRank(
+            bestDissimilarityRankByCategory,
+            feedback.dissimilarityClue.category,
+            feedback.dissimilarityClue.disrank,
+          );
+        }
+
         setProfessorText(feedback.spokenParagraph);
 
         pendingLogEntry = {
@@ -662,103 +806,232 @@
           logParagraph: feedback.logParagraph,
         };
 
+        updateRemainingCount();
+
         setInputEnabled(true);
         guessInput.value = "";
         guessInput.focus();
       }
 
       function buildFeedbackForGuess(guess) {
-        const secretA = fileAData[secretNumber].descriptors;
-        const guessA = fileAData[guess].descriptors;
+        const similarityClue = chooseSimilarityClue(guess);
+        const dissimilarityClue = chooseDissimilarityClue(guess);
 
-        const secretB = fileBData[secretNumber].descriptors;
-        const guessB = fileBData[guess].descriptors;
-
-        const secretC = fileCData[secretNumber].descriptors;
-        const guessC = fileCData[guess].descriptors;
-
-        const similarityDescriptor =
-          chooseSimilarityDescriptor(guessA, secretA) ??
-          chooseSimilarityDescriptor(guessB, secretB) ??
-          chooseSimilarityDescriptor(guessC, secretC) ??
-          null;
-
-        const differenceDescriptor =
-          chooseDifferenceDescriptor(guessC, secretC) ??
-          chooseDifferenceDescriptor(guessB, secretB) ??
-          chooseDifferenceDescriptor(guessA, secretA) ??
-          null;
-
-        let spokenParagraph;
-        let logParagraph;
         let similarityLogLine;
         let differenceLogLine;
+        let spokenParagraph;
 
-        if (similarityDescriptor) {
-          similarityLogLine = `My number ${similarityDescriptor}.`;
+        if (similarityClue) {
+          similarityLogLine = `My number ${similarityClue.text}.`;
         } else {
           similarityLogLine = `My number shares something in common with your guess.`;
         }
 
-        if (differenceDescriptor) {
-          differenceLogLine = `My number ${invertDescriptor(differenceDescriptor)}.`;
+        if (dissimilarityClue) {
+          differenceLogLine = `My number ${invertDescriptor(dissimilarityClue.text)}.`;
         } else {
           differenceLogLine = `My number differs from your guess in at least one way.`;
         }
 
-        if (similarityDescriptor && differenceDescriptor) {
+        if (similarityClue && dissimilarityClue) {
           spokenParagraph =
-            `That's not right, but my number, like the number you guessed, ${similarityDescriptor}. ` +
-            `However, you guessed a number that ${differenceDescriptor}, but my number ${invertDescriptor(differenceDescriptor)}.`;
-        } else if (similarityDescriptor && !differenceDescriptor) {
+            `That's not right, but my number, like the number you guessed, ${similarityClue.text}. ` +
+            `However, you guessed a number that ${dissimilarityClue.text}, but my number ${invertDescriptor(dissimilarityClue.text)}.`;
+        } else if (similarityClue && !dissimilarityClue) {
           spokenParagraph =
-            `That's not right, but my number, like the number you guessed, ${similarityDescriptor}. ` +
+            `That's not right, but my number, like the number you guessed, ${similarityClue.text}. ` +
             `However, your guess still differs from my number in at least one way.`;
-        } else if (!similarityDescriptor && differenceDescriptor) {
+        } else if (!similarityClue && dissimilarityClue) {
           spokenParagraph =
             `That's not right, but my number does share something in common with the number you guessed. ` +
-            `However, you guessed a number that ${differenceDescriptor}, but my number ${invertDescriptor(differenceDescriptor)}.`;
+            `However, you guessed a number that ${dissimilarityClue.text}, but my number ${invertDescriptor(dissimilarityClue.text)}.`;
         } else {
           spokenParagraph =
             `That's not right, but my number does share something in common with the number you guessed. ` +
             `However, your guess still differs from my number in at least one way.`;
         }
 
-        logParagraph = `${similarityLogLine} ${differenceLogLine}`;
-
-        usedFeedbackLines.add(similarityLogLine);
-        usedFeedbackLines.add(differenceLogLine);
-
         return {
+          similarityClue,
+          dissimilarityClue,
           spokenParagraph,
-          logParagraph,
+          logParagraph: `${similarityLogLine} ${differenceLogLine}`,
         };
       }
 
-      function chooseSimilarityDescriptor(guessDescriptors, secretDescriptors) {
-        const secretSet = new Set(secretDescriptors);
+      function chooseSimilarityClue(guess) {
+        const secretClues = cluesByNumber[secretNumber];
+        const guessTexts = clueTextSetsByNumber[guess];
 
-        const candidates = guessDescriptors.filter((descriptor) => {
-          const finalLine = `My number ${descriptor}.`;
-          return secretSet.has(descriptor) && !usedFeedbackLines.has(finalLine);
+        const structurallyEligible = secretClues.filter((clue) => {
+          if (!guessTexts.has(clue.text)) return false;
+          if (usedClueTexts.has(clue.text)) return false;
+
+          const bestShownRank = bestSimilarityRankByCategory.get(clue.category);
+          if (bestShownRank != null && clue.rank >= bestShownRank) return false;
+
+          return true;
         });
 
-        if (candidates.length === 0) return null;
-        return pickRandom(candidates);
+        if (structurallyEligible.length === 0) return null;
+
+        const bestTier = Math.min(
+          ...structurallyEligible.map((clue) => clue.tier),
+        );
+        const tierPool = structurallyEligible.filter(
+          (clue) => clue.tier === bestTier,
+        );
+
+        const bestPerCategory = keepBestPerCategory(tierPool, "rank");
+        const informative = bestPerCategory.filter((clue) =>
+          similarityWouldReducePool(clue),
+        );
+
+        if (informative.length === 0) return null;
+
+        return pickRandom(informative);
       }
 
-      function chooseDifferenceDescriptor(guessDescriptors, secretDescriptors) {
-        const secretSet = new Set(secretDescriptors);
+      function chooseDissimilarityClue(guess) {
+        const guessClues = cluesByNumber[guess];
+        const secretTexts = clueTextSetsByNumber[secretNumber];
 
-        const candidates = guessDescriptors.filter((descriptor) => {
-          if (secretSet.has(descriptor)) return false;
+        const structurallyEligible = guessClues.filter((clue) => {
+          if (!clue.candissim) return false;
+          if (secretTexts.has(clue.text)) return false;
+          if (usedClueTexts.has(clue.text)) return false;
 
-          const invertedLine = `My number ${invertDescriptor(descriptor)}.`;
-          return !usedFeedbackLines.has(invertedLine);
+          const bestShownRank = bestDissimilarityRankByCategory.get(
+            clue.category,
+          );
+          if (bestShownRank != null && clue.disrank >= bestShownRank)
+            return false;
+
+          return true;
         });
 
-        if (candidates.length === 0) return null;
-        return pickRandom(candidates);
+        if (structurallyEligible.length === 0) return null;
+
+        const bestTier = Math.min(
+          ...structurallyEligible.map((clue) => clue.distier),
+        );
+        const tierPool = structurallyEligible.filter(
+          (clue) => clue.distier === bestTier,
+        );
+
+        const bestPerCategory = keepBestPerCategory(tierPool, "disrank");
+        const informative = bestPerCategory.filter((clue) =>
+          dissimilarityWouldReducePool(clue),
+        );
+
+        if (informative.length === 0) return null;
+
+        return pickRandom(informative);
+      }
+
+      function keepBestPerCategory(clues, rankField) {
+        const bestByCategory = new Map();
+
+        for (const clue of clues) {
+          const existing = bestByCategory.get(clue.category);
+          if (!existing || clue[rankField] < existing[rankField]) {
+            bestByCategory.set(clue.category, clue);
+          }
+        }
+
+        return Array.from(bestByCategory.values());
+      }
+
+      function similarityWouldReducePool(clue) {
+        if (requiredDescriptors.has(clue.text)) return false;
+
+        const before = countCurrentPossibleUnguessed();
+        const after = countPossibleUnguessedWithExtraRequired(clue.text);
+
+        return after < before;
+      }
+
+      function dissimilarityWouldReducePool(clue) {
+        if (forbiddenDescriptors.has(clue.text)) return false;
+
+        const before = countCurrentPossibleUnguessed();
+        const after = countPossibleUnguessedWithExtraForbidden(clue.text);
+
+        return after < before;
+      }
+
+      function countCurrentPossibleUnguessed() {
+        let count = 0;
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossible(n)) continue;
+          count++;
+        }
+
+        return count;
+      }
+
+      function countPossibleUnguessedWithExtraRequired(extraRequired) {
+        let count = 0;
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, extraRequired, null))
+            continue;
+          count++;
+        }
+
+        return count;
+      }
+
+      function countPossibleUnguessedWithExtraForbidden(extraForbidden) {
+        let count = 0;
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, null, extraForbidden))
+            continue;
+          count++;
+        }
+
+        return count;
+      }
+
+      function isCandidateStillPossible(number) {
+        return isCandidateStillPossibleWithExtras(number, null, null);
+      }
+
+      function isCandidateStillPossibleWithExtras(
+        number,
+        extraRequired,
+        extraForbidden,
+      ) {
+        const textSet = clueTextSetsByNumber[number];
+
+        for (const required of requiredDescriptors) {
+          if (!textSet.has(required)) return false;
+        }
+
+        for (const forbidden of forbiddenDescriptors) {
+          if (textSet.has(forbidden)) return false;
+        }
+
+        if (extraRequired && !textSet.has(extraRequired)) return false;
+        if (extraForbidden && textSet.has(extraForbidden)) return false;
+
+        return true;
+      }
+
+      function updateRemainingCount() {
+        remainingCount.textContent = String(countCurrentPossibleUnguessed());
+      }
+
+      function updateBestRank(rankMap, category, rank) {
+        const existing = rankMap.get(category);
+        if (existing == null || rank < existing) {
+          rankMap.set(category, rank);
+        }
       }
 
       function invertDescriptor(descriptor) {
@@ -804,7 +1077,7 @@
       }
 
       function setProfessorText(text) {
-        professorText.textContent = text;
+        professorText.innerHTML = `<span class="prof-name">Professor Thousand:</span> ${escapeHtml(text)}`;
       }
 
       function addGuessChip(guess) {
@@ -889,11 +1162,11 @@
 
         const frames = ["Hmmm", "Hmmm.", "Hmmm..", "Hmmm..."];
         let index = 0;
-        professorText.textContent = frames[0];
+        setProfessorText(frames[0]);
 
         thinkingInterval = setInterval(() => {
           index = (index + 1) % frames.length;
-          professorText.textContent = frames[index];
+          setProfessorText(frames[index]);
         }, 350);
       }
 
@@ -935,6 +1208,64 @@
 
       function delay(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      function getCurrentPossibleNumbers() {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossible(n)) continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function getPossibleNumbersWithExtraRequired(extraRequired) {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, extraRequired, null))
+            continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function getPossibleNumbersWithExtraForbidden(extraForbidden) {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, null, extraForbidden))
+            continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function debugCandidateClue(clue, kind) {
+        const before = getCurrentPossibleNumbers();
+        const after =
+          kind === "sim"
+            ? getPossibleNumbersWithExtraRequired(clue.text)
+            : getPossibleNumbersWithExtraForbidden(clue.text);
+
+        const removed = before.filter((n) => !after.includes(n));
+
+        console.log("----- DEBUG CLUE -----");
+        console.log("Type:", kind);
+        console.log("Clue text:", clue.text);
+        console.log("Category:", clue.category);
+        console.log("Before count:", before.length);
+        console.log("After count:", after.length);
+        console.log("Removed count:", removed.length);
+        console.log("First 50 removed:", removed.slice(0, 50));
+        console.log("First 50 remaining after:", after.slice(0, 50));
       }
     </script>
   </body>
