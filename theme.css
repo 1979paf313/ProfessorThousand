@@ -224,7 +224,7 @@ select:focus {
   pointer-events: none;
 
   font-family: var(--font-ui);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   line-height: 1;
   font-weight: var(--weight-bold);
   letter-spacing: 0.01em;
@@ -245,6 +245,6 @@ select:focus {
   }
 
   .game-title-vertical {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
