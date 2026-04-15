@@ -508,7 +508,6 @@
 
       <div id="log" class="log"></div>
     </div>
-
     <script>
       const FEEDBACK_FILES = [
         "feedback_identity.txt",
@@ -520,6 +519,7 @@
       ];
 
       const THINKING_DELAY = 2000;
+      const WIN_DATA_KEY = "professorThousandWinData";
 
       const secretDisplay = document.getElementById("secretDisplay");
       const guessInput = document.getElementById("guessInput");
@@ -540,6 +540,7 @@
       let secretNumber = null;
       let guessCount = 0;
       let previousGuesses = new Set();
+      let currentGuessSequence = [];
 
       let usedClueTexts = new Set();
 
@@ -570,6 +571,7 @@
           );
 
           buildClueDatabase(texts);
+          exposeDebugHelpers();
 
           startNewGame();
           gameReady = true;
@@ -676,6 +678,7 @@
         secretNumber = getRandomInt(1, 999);
         guessCount = 0;
         previousGuesses = new Set();
+        currentGuessSequence = [];
 
         usedClueTexts = new Set();
 
@@ -752,6 +755,7 @@
         flushPendingLogEntry();
 
         previousGuesses.add(guess);
+        currentGuessSequence.push(guess);
         guessCount++;
         addGuessChip(guess);
 
@@ -769,14 +773,6 @@
         stopThinkingAnimation();
 
         const feedback = buildFeedbackForGuess(guess);
-
-        if (feedback.similarityClue) {
-          debugCandidateClue(feedback.similarityClue, "sim");
-        }
-
-        if (feedback.dissimilarityClue) {
-          debugCandidateClue(feedback.dissimilarityClue, "dissim");
-        }
 
         if (feedback.similarityClue) {
           usedClueTexts.add(feedback.similarityClue.text);
@@ -1051,6 +1047,13 @@
         secretDisplay.textContent = formatThreeDigits(secretNumber);
         guessInput.value = String(guess);
 
+        saveCompletedGame({
+          secretNumber,
+          guessesToSolve: guessCount,
+          guesses: [...currentGuessSequence],
+          solvedAt: new Date().toISOString(),
+        });
+
         const winParagraph =
           `Excellent! You found my secret number: ${formatThreeDigits(secretNumber)}. ` +
           `You solved it in ${guessCount} ${guessCount === 1 ? "guess" : "guesses"}.`;
@@ -1062,6 +1065,66 @@
 
         setInputEnabled(false);
         pendingLogEntry = null;
+      }
+
+      function saveCompletedGame(gameRecord) {
+        const records = getSavedWins();
+        records.push(gameRecord);
+        localStorage.setItem(WIN_DATA_KEY, JSON.stringify(records));
+      }
+
+      function getSavedWins() {
+        try {
+          const raw = localStorage.getItem(WIN_DATA_KEY);
+          if (!raw) return [];
+
+          const parsed = JSON.parse(raw);
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (error) {
+          console.error("Could not read saved win data:", error);
+          return [];
+        }
+      }
+
+      function clearSavedWins() {
+        localStorage.removeItem(WIN_DATA_KEY);
+        console.log("Professor Thousand win data cleared.");
+      }
+
+      function getStatsForNumber(targetNumber) {
+        const allWins = getSavedWins();
+        const matches = allWins.filter(
+          (entry) => entry.secretNumber === targetNumber,
+        );
+
+        if (matches.length === 0) {
+          return {
+            secretNumber: targetNumber,
+            totalWins: 0,
+            averageGuesses: null,
+            fastestSolve: null,
+            slowestSolve: null,
+            allRecords: [],
+          };
+        }
+
+        const guessCounts = matches.map((entry) => entry.guessesToSolve);
+        const total = guessCounts.reduce((sum, value) => sum + value, 0);
+
+        return {
+          secretNumber: targetNumber,
+          totalWins: matches.length,
+          averageGuesses: total / matches.length,
+          fastestSolve: Math.min(...guessCounts),
+          slowestSolve: Math.max(...guessCounts),
+          allRecords: matches,
+        };
+      }
+
+      function exposeDebugHelpers() {
+        window.ptGetWinData = getSavedWins;
+        window.ptClearWinData = clearSavedWins;
+        window.ptNumberStats = getStatsForNumber;
       }
 
       function flushPendingLogEntry() {
@@ -1208,64 +1271,6 @@
 
       function delay(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
-      }
-
-      function getCurrentPossibleNumbers() {
-        const nums = [];
-
-        for (let n = 1; n <= 999; n++) {
-          if (previousGuesses.has(n)) continue;
-          if (!isCandidateStillPossible(n)) continue;
-          nums.push(n);
-        }
-
-        return nums;
-      }
-
-      function getPossibleNumbersWithExtraRequired(extraRequired) {
-        const nums = [];
-
-        for (let n = 1; n <= 999; n++) {
-          if (previousGuesses.has(n)) continue;
-          if (!isCandidateStillPossibleWithExtras(n, extraRequired, null))
-            continue;
-          nums.push(n);
-        }
-
-        return nums;
-      }
-
-      function getPossibleNumbersWithExtraForbidden(extraForbidden) {
-        const nums = [];
-
-        for (let n = 1; n <= 999; n++) {
-          if (previousGuesses.has(n)) continue;
-          if (!isCandidateStillPossibleWithExtras(n, null, extraForbidden))
-            continue;
-          nums.push(n);
-        }
-
-        return nums;
-      }
-
-      function debugCandidateClue(clue, kind) {
-        const before = getCurrentPossibleNumbers();
-        const after =
-          kind === "sim"
-            ? getPossibleNumbersWithExtraRequired(clue.text)
-            : getPossibleNumbersWithExtraForbidden(clue.text);
-
-        const removed = before.filter((n) => !after.includes(n));
-
-        console.log("----- DEBUG CLUE -----");
-        console.log("Type:", kind);
-        console.log("Clue text:", clue.text);
-        console.log("Category:", clue.category);
-        console.log("Before count:", before.length);
-        console.log("After count:", after.length);
-        console.log("Removed count:", removed.length);
-        console.log("First 50 removed:", removed.slice(0, 50));
-        console.log("First 50 remaining after:", after.slice(0, 50));
       }
     </script>
   </body>
