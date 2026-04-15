@@ -229,26 +229,47 @@ select:focus {
   pointer-events: none;
 }
 
-.game-panel {
-  position: relative;
+.game-frame {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+
+.game-title-rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-title-vertical {
-  position: absolute;
-  left: -34px;
-  top: 50%;
   margin: 0;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   white-space: nowrap;
+  pointer-events: none;
 
   font-family: var(--font-ui);
-  font-size: 2.5rem;
+  font-size: clamp(2.1rem, 2.4vw, 2.8rem);
   line-height: 1;
   font-weight: var(--weight-bold);
   letter-spacing: 0.02em;
 
   color: color-mix(in srgb, var(--color-text) 90%, var(--color-accent-secondary) 10%);
-  opacity: 0.92;
-  pointer-events: none;
+  opacity: 0.9;
+}
+
+.game-panel {
+  position: relative;
+}
+
+@media (max-width: 860px) {
+  .game-frame {
+    grid-template-columns: 56px 1fr;
+    gap: var(--space-2);
+  }
+
+  .game-title-vertical {
+    font-size: clamp(1.6rem, 2vw, 2rem);
+  }
 }
