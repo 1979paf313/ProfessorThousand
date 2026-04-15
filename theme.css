@@ -231,7 +231,7 @@ select:focus {
 
 .game-frame {
   display: grid;
-  grid-template-columns: 52px 1fr;
+  grid-template-columns: 56px 1fr;
   gap: var(--space-3);
   align-items: stretch;
 }
@@ -240,6 +240,7 @@ select:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .game-title-vertical {
@@ -250,7 +251,7 @@ select:focus {
   pointer-events: none;
 
   font-family: var(--font-ui);
-  font-size: clamp(2rem, 2.2vw, 2.5rem);
+  font-size: 2.2rem;
   line-height: 1;
   font-weight: var(--weight-bold);
   letter-spacing: 0.01em;
@@ -261,15 +262,16 @@ select:focus {
 
 .game-panel {
   position: relative;
+  min-width: 0;
 }
 
 @media (max-width: 860px) {
-.game-frame {
-  grid-template-columns: 42px 1fr;
-  gap: var(--space-2);
-}
+  .game-frame {
+    grid-template-columns: 42px 1fr;
+    gap: var(--space-2);
+  }
 
   .game-title-vertical {
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: 1.8rem;
   }
 }
