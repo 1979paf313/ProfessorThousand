@@ -4,79 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professor Thousand</title>
+    <link rel="stylesheet" href="theme.css" />
     <style>
       * {
         box-sizing: border-box;
       }
 
-      :root {
-        --bg: #111417;
-        --panel: #1b2228;
-        --panel-2: #232d35;
-        --screen: #0a0f0a;
-        --border: #37444f;
-        --text: #e8edf2;
-        --muted: #a4b0bb;
-        --red: #ff4d4d;
-        --green: #69ff8a;
-        --yellow: #ffd86b;
-        --blue: #79b8ff;
-        --shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-      }
-
-      body {
-        margin: 0;
-        background: radial-gradient(
-          circle at top,
-          #1a232b 0%,
-          #111417 45%,
-          #0c0f12 100%
-        );
-        color: var(--text);
-        font-family: Arial, Helvetica, sans-serif;
-        min-height: 100vh;
+      body.game-prof-thousand {
         padding: 24px;
       }
 
       .app {
-        max-width: 1120px;
+        width: min(1120px, 96vw);
         margin: 0 auto;
       }
 
-      .title {
+      .main-panel {
+        padding: var(--space-6);
+      }
+
+      .intro-copy {
         text-align: center;
-        margin-bottom: 18px;
-      }
-
-      .title h1 {
-        margin: 0 0 8px;
-        font-size: clamp(2rem, 4vw, 3rem);
-        letter-spacing: 1px;
-      }
-
-      .title p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1rem;
+        margin: 0 0 var(--space-4);
+        color: var(--color-text-muted);
+        font-size: var(--text-md);
       }
 
       .top-bar {
         display: flex;
         justify-content: center;
-        margin: 18px 0 22px;
+        margin: var(--space-4) 0 var(--space-5);
         min-height: 48px;
       }
 
       .new-game-btn {
-        background: var(--blue);
-        color: #08131f;
-        border: none;
-        border-radius: 12px;
-        padding: 12px 18px;
-        font-weight: bold;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: var(--shadow);
         display: none;
       }
 
@@ -84,29 +45,37 @@
         display: inline-block;
       }
 
-      .new-game-btn:hover {
-        filter: brightness(1.07);
-      }
-
       .play-row {
         display: grid;
         grid-template-columns: 1fr 1fr auto;
-        gap: 18px;
+        gap: var(--space-4);
         align-items: stretch;
-        margin-bottom: 20px;
+        margin-bottom: var(--space-5);
       }
 
-      .display-card {
-        background: linear-gradient(180deg, var(--panel), var(--panel-2));
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 18px;
-        box-shadow: var(--shadow);
-        min-width: 0;
+      .display-card,
+      .info-card,
+      .log-entry {
+        padding: var(--space-4);
       }
 
-      .display-label {
-        color: var(--muted);
+      .display-card,
+      .info-card,
+      .log-entry,
+      .floating-win {
+        background: linear-gradient(
+          180deg,
+          var(--color-surface-raised) 0%,
+          var(--color-surface) 100%
+        );
+        border: 1px solid var(--color-border-soft);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-panel);
+      }
+
+      .display-label,
+      .section-title {
+        color: var(--color-text-muted);
         font-size: 0.95rem;
         margin-bottom: 10px;
         text-transform: uppercase;
@@ -114,22 +83,28 @@
         text-align: center;
       }
 
+      .section-title {
+        margin-top: 0;
+        margin-bottom: 12px;
+        text-align: left;
+      }
+
       .calculator-display,
       .guess-input-display {
         width: 100%;
         min-height: 86px;
-        border-radius: 14px;
-        border: 2px solid #2c3a34;
+        border-radius: var(--radius-md);
+        border: 2px solid rgba(114, 211, 154, 0.18);
         background: linear-gradient(180deg, #111711 0%, #091009 100%);
         box-shadow:
           inset 0 0 18px rgba(0, 0, 0, 0.6),
-          inset 0 0 1px rgba(255, 255, 255, 0.15);
+          inset 0 0 1px rgba(255, 255, 255, 0.12);
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         padding: 14px 18px;
-        font-family: "Lucida Console", "Courier New", monospace;
+        font-family: var(--font-mono);
         font-size: clamp(2.2rem, 5vw, 3.6rem);
         letter-spacing: 6px;
         overflow: hidden;
@@ -137,24 +112,24 @@
       }
 
       .secret-display {
-        color: var(--red);
+        color: #ff7b72;
         text-shadow:
-          0 0 8px rgba(255, 77, 77, 0.7),
-          0 0 16px rgba(255, 77, 77, 0.45);
+          0 0 8px rgba(255, 123, 114, 0.65),
+          0 0 16px rgba(255, 123, 114, 0.35);
       }
 
       .guess-input-display {
-        color: var(--green);
+        color: #72d39a;
         text-shadow:
-          0 0 8px rgba(105, 255, 138, 0.7),
-          0 0 16px rgba(105, 255, 138, 0.4);
-        caret-color: var(--green);
+          0 0 8px rgba(114, 211, 154, 0.6),
+          0 0 16px rgba(114, 211, 154, 0.3);
+        caret-color: #72d39a;
         outline: none;
         appearance: textfield;
       }
 
       .guess-input-display::placeholder {
-        color: rgba(105, 255, 138, 0.35);
+        color: rgba(114, 211, 154, 0.28);
         text-shadow: none;
       }
 
@@ -171,20 +146,10 @@
 
       .guess-btn {
         min-height: 116px;
-        padding: 0 26px;
-        border-radius: 18px;
-        border: none;
-        background: var(--yellow);
-        color: #241a00;
-        font-size: 2rem;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: var(--shadow);
         min-width: 150px;
-      }
-
-      .guess-btn:hover:not(:disabled) {
-        filter: brightness(1.05);
+        padding: 0 26px;
+        font-size: 1.8rem;
+        font-weight: var(--weight-bold);
       }
 
       .guess-btn:disabled {
@@ -197,25 +162,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: var(--space-3);
       }
 
       .status-message {
-        color: var(--yellow);
+        color: var(--color-accent-secondary);
         font-size: 0.95rem;
         min-height: 20px;
+        text-align: center;
       }
 
       .professor-box {
         background: rgba(255, 255, 255, 0.04);
         border: 1px dashed rgba(255, 255, 255, 0.16);
-        border-radius: 14px;
-        padding: 16px;
-        margin-bottom: 18px;
+        border-radius: var(--radius-md);
+        padding: var(--space-4);
+        margin-bottom: var(--space-5);
         min-height: 180px;
         display: grid;
         grid-template-columns: 25% 1fr;
-        gap: 16px;
+        gap: var(--space-4);
         align-items: center;
       }
 
@@ -241,38 +207,22 @@
       }
 
       .prof-text {
-        color: var(--text);
+        color: var(--color-text);
         line-height: 1.5;
         font-size: 1.5rem;
         width: 100%;
       }
 
       .prof-name {
-        color: var(--blue);
-        font-weight: bold;
+        color: color-mix(in srgb, var(--color-accent-primary) 80%, white 12%);
+        font-weight: var(--weight-bold);
       }
 
       .info-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 18px;
-        margin-bottom: 18px;
-      }
-
-      .info-card {
-        background: linear-gradient(180deg, var(--panel), var(--panel-2));
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .section-title {
-        margin: 0 0 12px;
-        color: var(--muted);
-        font-size: 0.95rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        gap: var(--space-4);
+        margin-bottom: var(--space-5);
       }
 
       .guess-chip-row {
@@ -282,9 +232,9 @@
       }
 
       .guess-chip {
-        background: rgba(121, 184, 255, 0.12);
-        color: #d8ebff;
-        border: 1px solid rgba(121, 184, 255, 0.28);
+        background: rgba(114, 211, 154, 0.12);
+        color: #dff7e7;
+        border: 1px solid rgba(114, 211, 154, 0.24);
         border-radius: 999px;
         padding: 8px 12px;
         font-size: 0.95rem;
@@ -292,15 +242,15 @@
 
       .remaining-count {
         font-size: clamp(1.6rem, 3vw, 2.4rem);
-        font-weight: bold;
-        color: var(--green);
+        font-weight: var(--weight-bold);
+        color: #72d39a;
         text-align: center;
         line-height: 1.2;
         margin-top: 6px;
       }
 
       .remaining-caption {
-        color: var(--muted);
+        color: var(--color-text-muted);
         font-size: 0.95rem;
         text-align: center;
       }
@@ -311,27 +261,19 @@
         gap: 14px;
       }
 
-      .log-entry {
-        background: linear-gradient(180deg, var(--panel), var(--panel-2));
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 16px;
-        box-shadow: var(--shadow);
-      }
-
       .log-entry.win {
-        border-color: rgba(105, 255, 138, 0.35);
+        border-color: rgba(114, 211, 154, 0.3);
         background: linear-gradient(
           180deg,
-          rgba(25, 55, 31, 0.9),
-          rgba(19, 41, 25, 0.95)
+          rgba(27, 61, 39, 0.95),
+          rgba(20, 45, 29, 0.98)
         );
       }
 
       .log-header {
-        font-weight: bold;
+        font-weight: var(--weight-bold);
         margin-bottom: 10px;
-        color: var(--blue);
+        color: color-mix(in srgb, var(--color-accent-primary) 75%, white 12%);
       }
 
       .log-line {
@@ -343,16 +285,13 @@
         position: sticky;
         top: 12px;
         z-index: 20;
-        margin-bottom: 16px;
-        background: linear-gradient(180deg, #23492c, #18341e);
-        border: 1px solid rgba(105, 255, 138, 0.35);
-        border-radius: 18px;
+        margin-bottom: var(--space-4);
         padding: 14px 16px;
-        box-shadow: var(--shadow);
         display: none;
         align-items: start;
         justify-content: space-between;
         gap: 12px;
+        border-color: rgba(114, 211, 154, 0.28);
       }
 
       .floating-win.show {
@@ -365,12 +304,16 @@
 
       .dismiss-btn {
         background: transparent;
-        color: #dfffe6;
+        color: var(--color-text);
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         padding: 6px 10px;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: var(--weight-bold);
+      }
+
+      .dismiss-btn:hover {
+        filter: brightness(1.05);
       }
 
       .shake {
@@ -399,6 +342,10 @@
       }
 
       @media (max-width: 860px) {
+        body.game-prof-thousand {
+          padding: 16px;
+        }
+
         .play-row,
         .info-grid {
           grid-template-columns: 1fr;
@@ -422,91 +369,107 @@
           max-width: 180px;
           margin: 0 auto;
         }
+
+        .game-title-vertical {
+          left: -24px;
+          font-size: 2rem;
+        }
       }
     </style>
   </head>
-  <body>
-    <div class="app">
-      <div class="title">
-        <h1>Professor Thousand</h1>
-        <p>Guess the professor’s secret number from 1 to 999.</p>
-      </div>
+  <body class="game-prof-thousand">
+    <div class="app game-shell">
+      <div class="panel game-panel main-panel">
+        <h1 class="game-title-vertical">Professor Thousand</h1>
 
-      <div id="floatingWin" class="floating-win">
-        <div id="floatingWinText" class="floating-win-text"></div>
-        <button id="dismissWinBtn" class="dismiss-btn" type="button">
-          Dismiss
-        </button>
-      </div>
+        <p class="intro-copy">Guess the professor’s secret number from 1 to 999.</p>
 
-      <div class="top-bar">
-        <button id="newGameBtn" class="new-game-btn" type="button">
-          New Game
-        </button>
-      </div>
+        <div id="floatingWin" class="floating-win">
+          <div id="floatingWinText" class="floating-win-text"></div>
+          <button id="dismissWinBtn" class="dismiss-btn" type="button">
+            Dismiss
+          </button>
+        </div>
 
-      <div class="play-row">
-        <div class="display-card">
-          <div class="display-label">Professor Thousand</div>
-          <div id="secretDisplay" class="calculator-display secret-display">
-            ***
+        <div class="top-bar">
+          <button
+            id="newGameBtn"
+            class="new-game-btn button button--secondary"
+            type="button"
+          >
+            New Game
+          </button>
+        </div>
+
+        <div class="play-row">
+          <div class="display-card">
+            <div class="display-label">Professor Thousand</div>
+            <div id="secretDisplay" class="calculator-display secret-display">
+              ***
+            </div>
+          </div>
+
+          <div class="display-card">
+            <div class="display-label">Your Guess</div>
+            <input
+              id="guessInput"
+              class="guess-input-display"
+              type="text"
+              inputmode="numeric"
+              maxlength="3"
+              placeholder="---"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="submit-wrap">
+            <button
+              id="guessBtn"
+              class="guess-btn button button--secondary"
+              type="button"
+            >
+              SUBMIT
+            </button>
           </div>
         </div>
 
-        <div class="display-card">
-          <div class="display-label">Your Guess</div>
-          <input
-            id="guessInput"
-            class="guess-input-display"
-            type="text"
-            inputmode="numeric"
-            maxlength="3"
-            placeholder="---"
-            autocomplete="off"
-          />
+        <div class="status-row">
+          <div id="statusMessage" class="status-message"></div>
         </div>
 
-        <div class="submit-wrap">
-          <button id="guessBtn" class="guess-btn" type="button">SUBMIT</button>
-        </div>
-      </div>
-
-      <div class="status-row">
-        <div id="statusMessage" class="status-message"></div>
-      </div>
-
-      <div id="professorBox" class="professor-box">
-        <div class="professor-image-wrap">
-          <img
-            src="ProfessorThousand.png"
-            alt="Professor Thousand"
-            class="professor-image"
-          />
-        </div>
-        <div class="professor-text-wrap">
-          <div id="professorText" class="prof-text">
-            <span class="prof-name">Professor Thousand:</span> I await your
-            first guess.
+        <div id="professorBox" class="professor-box">
+          <div class="professor-image-wrap">
+            <img
+              src="ProfessorThousand.png"
+              alt="Professor Thousand"
+              class="professor-image"
+            />
+          </div>
+          <div class="professor-text-wrap">
+            <div id="professorText" class="prof-text">
+              <span class="prof-name">Professor Thousand:</span> I await your
+              first guess.
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="info-grid">
-        <div class="info-card">
-          <h2 class="section-title">Previous Guesses</h2>
-          <div id="guessChipRow" class="guess-chip-row"></div>
-        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h2 class="section-title">Previous Guesses</h2>
+            <div id="guessChipRow" class="guess-chip-row"></div>
+          </div>
 
-        <div class="info-card">
-          <h2 class="section-title">Numbers Still Possible</h2>
-          <div id="remainingCount" class="remaining-count">999</div>
-          <div class="remaining-caption">
-            Valid, unguessed numbers consistent with all clues so far.
+          <div class="info-card">
+            <h2 class="section-title">Numbers Still Possible</h2>
+            <div id="remainingCount" class="remaining-count">999</div>
+            <div class="remaining-caption">
+              Valid, unguessed numbers consistent with all clues so far.
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="log" class="log"></div>
+        <div id="log" class="log"></div>
+      </div>
     </div>
     <script>
       const FEEDBACK_FILES = [
@@ -519,7 +482,6 @@
       ];
 
       const THINKING_DELAY = 2000;
-      const WIN_DATA_KEY = "professorThousandWinData";
 
       const secretDisplay = document.getElementById("secretDisplay");
       const guessInput = document.getElementById("guessInput");
@@ -540,7 +502,6 @@
       let secretNumber = null;
       let guessCount = 0;
       let previousGuesses = new Set();
-      let currentGuessSequence = [];
 
       let usedClueTexts = new Set();
 
@@ -571,7 +532,6 @@
           );
 
           buildClueDatabase(texts);
-          exposeDebugHelpers();
 
           startNewGame();
           gameReady = true;
@@ -678,7 +638,6 @@
         secretNumber = getRandomInt(1, 999);
         guessCount = 0;
         previousGuesses = new Set();
-        currentGuessSequence = [];
 
         usedClueTexts = new Set();
 
@@ -755,7 +714,6 @@
         flushPendingLogEntry();
 
         previousGuesses.add(guess);
-        currentGuessSequence.push(guess);
         guessCount++;
         addGuessChip(guess);
 
@@ -773,6 +731,14 @@
         stopThinkingAnimation();
 
         const feedback = buildFeedbackForGuess(guess);
+
+        if (feedback.similarityClue) {
+          debugCandidateClue(feedback.similarityClue, "sim");
+        }
+
+        if (feedback.dissimilarityClue) {
+          debugCandidateClue(feedback.dissimilarityClue, "dissim");
+        }
 
         if (feedback.similarityClue) {
           usedClueTexts.add(feedback.similarityClue.text);
@@ -1047,13 +1013,6 @@
         secretDisplay.textContent = formatThreeDigits(secretNumber);
         guessInput.value = String(guess);
 
-        saveCompletedGame({
-          secretNumber,
-          guessesToSolve: guessCount,
-          guesses: [...currentGuessSequence],
-          solvedAt: new Date().toISOString(),
-        });
-
         const winParagraph =
           `Excellent! You found my secret number: ${formatThreeDigits(secretNumber)}. ` +
           `You solved it in ${guessCount} ${guessCount === 1 ? "guess" : "guesses"}.`;
@@ -1065,66 +1024,6 @@
 
         setInputEnabled(false);
         pendingLogEntry = null;
-      }
-
-      function saveCompletedGame(gameRecord) {
-        const records = getSavedWins();
-        records.push(gameRecord);
-        localStorage.setItem(WIN_DATA_KEY, JSON.stringify(records));
-      }
-
-      function getSavedWins() {
-        try {
-          const raw = localStorage.getItem(WIN_DATA_KEY);
-          if (!raw) return [];
-
-          const parsed = JSON.parse(raw);
-          return Array.isArray(parsed) ? parsed : [];
-        } catch (error) {
-          console.error("Could not read saved win data:", error);
-          return [];
-        }
-      }
-
-      function clearSavedWins() {
-        localStorage.removeItem(WIN_DATA_KEY);
-        console.log("Professor Thousand win data cleared.");
-      }
-
-      function getStatsForNumber(targetNumber) {
-        const allWins = getSavedWins();
-        const matches = allWins.filter(
-          (entry) => entry.secretNumber === targetNumber,
-        );
-
-        if (matches.length === 0) {
-          return {
-            secretNumber: targetNumber,
-            totalWins: 0,
-            averageGuesses: null,
-            fastestSolve: null,
-            slowestSolve: null,
-            allRecords: [],
-          };
-        }
-
-        const guessCounts = matches.map((entry) => entry.guessesToSolve);
-        const total = guessCounts.reduce((sum, value) => sum + value, 0);
-
-        return {
-          secretNumber: targetNumber,
-          totalWins: matches.length,
-          averageGuesses: total / matches.length,
-          fastestSolve: Math.min(...guessCounts),
-          slowestSolve: Math.max(...guessCounts),
-          allRecords: matches,
-        };
-      }
-
-      function exposeDebugHelpers() {
-        window.ptGetWinData = getSavedWins;
-        window.ptClearWinData = clearSavedWins;
-        window.ptNumberStats = getStatsForNumber;
       }
 
       function flushPendingLogEntry() {
@@ -1271,6 +1170,64 @@
 
       function delay(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      function getCurrentPossibleNumbers() {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossible(n)) continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function getPossibleNumbersWithExtraRequired(extraRequired) {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, extraRequired, null))
+            continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function getPossibleNumbersWithExtraForbidden(extraForbidden) {
+        const nums = [];
+
+        for (let n = 1; n <= 999; n++) {
+          if (previousGuesses.has(n)) continue;
+          if (!isCandidateStillPossibleWithExtras(n, null, extraForbidden))
+            continue;
+          nums.push(n);
+        }
+
+        return nums;
+      }
+
+      function debugCandidateClue(clue, kind) {
+        const before = getCurrentPossibleNumbers();
+        const after =
+          kind === "sim"
+            ? getPossibleNumbersWithExtraRequired(clue.text)
+            : getPossibleNumbersWithExtraForbidden(clue.text);
+
+        const removed = before.filter((n) => !after.includes(n));
+
+        console.log("----- DEBUG CLUE -----");
+        console.log("Type:", kind);
+        console.log("Clue text:", clue.text);
+        console.log("Category:", clue.category);
+        console.log("Before count:", before.length);
+        console.log("After count:", after.length);
+        console.log("Removed count:", removed.length);
+        console.log("First 50 removed:", removed.slice(0, 50));
+        console.log("First 50 remaining after:", after.slice(0, 50));
       }
     </script>
   </body>
