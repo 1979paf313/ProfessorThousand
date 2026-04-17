@@ -210,9 +210,8 @@ select:focus {
 }
 
 .game-title-rail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: right;
+  align-items: right;
   overflow: visible;
 }
 
@@ -227,7 +226,11 @@ select:focus {
   line-height: 1;
   font-weight: var(--weight-bold);
   letter-spacing: 0.01em;
-  color: color-mix(in srgb, var(--color-text) 90%, var(--color-accent-secondary) 10%);
+  color: color-mix(
+    in srgb,
+    var(--color-text) 90%,
+    var(--color-accent-secondary) 10%
+  );
   opacity: 0.9;
 }
 
